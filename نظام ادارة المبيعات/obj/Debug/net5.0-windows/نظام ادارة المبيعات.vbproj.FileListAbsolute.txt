@@ -1,0 +1,28 @@
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.exe
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.deps.json
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.runtimeconfig.json
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.runtimeconfig.dev.json
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.dll
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\bin\Debug\net5.0-windows\ref\نظام ادارة المبيعات.dll
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.pdb
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.vbproj.AssemblyReference.cache
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Form1.resources
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Management.resources
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.MoneyBox.resources
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.purchases.resources
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Reports.resources
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Sales.resources
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.vbproj.GenerateResource.cache
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.AssemblyInfo.vb
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.vbproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.dll
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\ref\نظام ادارة المبيعات.dll
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.pdb
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.genruntimeconfig.cache
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.materials_management.resources
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.passwords.resources
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.people.resources
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.retail.resources
+C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.other_activities.resources
