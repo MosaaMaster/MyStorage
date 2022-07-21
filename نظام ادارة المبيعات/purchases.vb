@@ -1,0 +1,3 @@
+﻿Class purchases
+
+End Class
