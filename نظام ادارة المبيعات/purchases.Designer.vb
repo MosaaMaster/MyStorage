@@ -51,6 +51,7 @@ Partial Class purchases
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -273,6 +274,7 @@ Partial Class purchases
         Me.Label10.Size = New System.Drawing.Size(104, 15)
         Me.Label10.TabIndex = 13
         Me.Label10.Text = "استبدال القائمة رقم "
+        Me.Label10.Visible = False
         '
         'TextBox5
         '
@@ -280,12 +282,23 @@ Partial Class purchases
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(100, 23)
         Me.TextBox5.TabIndex = 2
+        Me.TextBox5.Visible = False
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(417, 396)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(86, 23)
+        Me.Button3.TabIndex = 14
+        Me.Button3.Text = "بحث عن قائمة"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'purchases
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -345,6 +358,6 @@ Partial Class purchases
     Friend WithEvents Label10 As Label
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents ColumnHeader6 As ColumnHeader
-
+    Friend WithEvents Button3 As Button
 
 End Class
