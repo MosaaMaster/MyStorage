@@ -11,6 +11,9 @@
             ComboBox2.Items.Add("ذمم عملاء")
             ComboBox2.Items.Add("ذمم شركاء")
             ComboBox2.Items.Add("مصاريف استيراد")
+                        ComboBox2.Items.Add("مصاريف استيراد")
+
+            
         End If
 
     End Sub
