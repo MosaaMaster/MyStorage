@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\source\\repos\\نظام ادارة المبيعات\\نظام ادارة المبيعات\\نظام ادارة المبيعات.vbproj": {}
+    "C:\\sailes\\MyStorage\\نظام ادارة المبيعات\\نظام ادارة المبيعات.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\source\\repos\\نظام ادارة المبيعات\\نظام ادارة المبيعات\\نظام ادارة المبيعات.vbproj": {
+    "C:\\sailes\\MyStorage\\نظام ادارة المبيعات\\نظام ادارة المبيعات.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\نظام ادارة المبيعات\\نظام ادارة المبيعات\\نظام ادارة المبيعات.vbproj",
+        "projectUniqueName": "C:\\sailes\\MyStorage\\نظام ادارة المبيعات\\نظام ادارة المبيعات.vbproj",
         "projectName": "نظام ادارة المبيعات",
-        "projectPath": "C:\\Users\\lenovo\\source\\repos\\نظام ادارة المبيعات\\نظام ادارة المبيعات\\نظام ادارة المبيعات.vbproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\source\\repos\\نظام ادارة المبيعات\\نظام ادارة المبيعات\\obj\\",
+        "projectPath": "C:\\sailes\\MyStorage\\نظام ادارة المبيعات\\نظام ادارة المبيعات.vbproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\sailes\\MyStorage\\نظام ادارة المبيعات\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -61,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
