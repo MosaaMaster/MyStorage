@@ -30,25 +30,18 @@ Partial Class MoneyBox
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
@@ -60,6 +53,9 @@ Partial Class MoneyBox
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -109,7 +105,7 @@ Partial Class MoneyBox
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(101, 79)
+        Me.TextBox2.Location = New System.Drawing.Point(139, 88)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 23)
         Me.TextBox2.TabIndex = 5
@@ -117,7 +113,7 @@ Partial Class MoneyBox
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(237, 87)
+        Me.Label3.Location = New System.Drawing.Point(259, 91)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(61, 15)
         Me.Label3.TabIndex = 6
@@ -132,17 +128,10 @@ Partial Class MoneyBox
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "الحساب الرئيسي"
         '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(101, 138)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 23)
-        Me.TextBox3.TabIndex = 5
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(237, 141)
+        Me.Label5.Location = New System.Drawing.Point(259, 141)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(88, 15)
         Me.Label5.TabIndex = 7
@@ -151,7 +140,7 @@ Partial Class MoneyBox
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(530, 175)
+        Me.Label6.Location = New System.Drawing.Point(515, 186)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(96, 15)
         Me.Label6.TabIndex = 3
@@ -172,22 +161,6 @@ Partial Class MoneyBox
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 23)
         Me.TextBox4.TabIndex = 2
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(511, 235)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 23)
-        Me.TextBox5.TabIndex = 2
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(629, 238)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(29, 15)
-        Me.Label8.TabIndex = 3
-        Me.Label8.Text = "دينار"
         '
         'Label9
         '
@@ -239,37 +212,12 @@ Partial Class MoneyBox
         Me.Label12.TabIndex = 3
         Me.Label12.Text = "دولار"
         '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(267, 246)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(29, 15)
-        Me.Label13.TabIndex = 3
-        Me.Label13.Text = "دينار"
-        '
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(139, 211)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(100, 23)
         Me.TextBox8.TabIndex = 2
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(139, 240)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 23)
-        Me.TextBox9.TabIndex = 2
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(267, 282)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(84, 15)
-        Me.Label14.TabIndex = 3
-        Me.Label14.Text = "ما يعادل بالدينار"
         '
         'Label15
         '
@@ -279,13 +227,6 @@ Partial Class MoneyBox
         Me.Label15.Size = New System.Drawing.Size(86, 15)
         Me.Label15.TabIndex = 3
         Me.Label15.Text = "ما يعادل بالدولار"
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(139, 282)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(100, 23)
-        Me.TextBox10.TabIndex = 2
         '
         'TextBox11
         '
@@ -376,24 +317,49 @@ Partial Class MoneyBox
         Me.Button2.Text = "تعديل"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(118, 138)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(121, 23)
+        Me.ComboBox3.TabIndex = 11
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(267, 51)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(60, 15)
+        Me.Label13.TabIndex = 10
+        Me.Label13.Text = "رقم الوصل"
+        Me.Label13.Visible = False
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(139, 43)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox5.TabIndex = 12
+        Me.TextBox5.Visible = False
+        '
         'MoneyBox
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 501)
+        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label20)
@@ -411,9 +377,6 @@ Partial Class MoneyBox
         Me.Controls.Add(Me.TextBox15)
         Me.Controls.Add(Me.TextBox14)
         Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox1)
@@ -434,25 +397,18 @@ Partial Class MoneyBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
     Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox10 As TextBox
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents Label17 As Label
@@ -464,4 +420,7 @@ Partial Class MoneyBox
     Friend WithEvents Label20 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents TextBox5 As TextBox
 End Class

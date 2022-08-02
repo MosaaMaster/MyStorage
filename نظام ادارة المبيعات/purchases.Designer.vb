@@ -57,7 +57,7 @@ Partial Class purchases
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(609, 28)
+        Me.Label1.Location = New System.Drawing.Point(625, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(77, 15)
         Me.Label1.TabIndex = 0
@@ -66,7 +66,7 @@ Partial Class purchases
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(626, 60)
+        Me.Label2.Location = New System.Drawing.Point(642, 54)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(60, 15)
         Me.Label2.TabIndex = 1
@@ -74,14 +74,14 @@ Partial Class purchases
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(503, 57)
+        Me.TextBox1.Location = New System.Drawing.Point(519, 51)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 23)
         Me.TextBox1.TabIndex = 2
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(503, 28)
+        Me.TextBox2.Location = New System.Drawing.Point(519, 22)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 23)
         Me.TextBox2.TabIndex = 3
@@ -89,7 +89,7 @@ Partial Class purchases
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(626, 124)
+        Me.Label3.Location = New System.Drawing.Point(642, 118)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(60, 15)
         Me.Label3.TabIndex = 4
@@ -99,7 +99,7 @@ Partial Class purchases
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"شراء", "استرجاع"})
-        Me.ComboBox1.Location = New System.Drawing.Point(482, 121)
+        Me.ComboBox1.Location = New System.Drawing.Point(498, 115)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 23)
         Me.ComboBox1.TabIndex = 5
@@ -107,7 +107,7 @@ Partial Class purchases
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(640, 163)
+        Me.Label4.Location = New System.Drawing.Point(656, 157)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(39, 15)
         Me.Label4.TabIndex = 6
@@ -116,7 +116,7 @@ Partial Class purchases
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(482, 163)
+        Me.ComboBox2.Location = New System.Drawing.Point(498, 157)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 23)
         Me.ComboBox2.TabIndex = 7
@@ -124,7 +124,7 @@ Partial Class purchases
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(626, 218)
+        Me.Label5.Location = New System.Drawing.Point(642, 212)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(53, 15)
         Me.Label5.TabIndex = 8
@@ -134,7 +134,7 @@ Partial Class purchases
         '
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"اجل", "نقدي"})
-        Me.ComboBox3.Location = New System.Drawing.Point(482, 209)
+        Me.ComboBox3.Location = New System.Drawing.Point(498, 203)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(121, 23)
         Me.ComboBox3.TabIndex = 9
@@ -142,7 +142,7 @@ Partial Class purchases
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(626, 244)
+        Me.Label6.Location = New System.Drawing.Point(642, 238)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(61, 15)
         Me.Label6.TabIndex = 8
@@ -150,7 +150,7 @@ Partial Class purchases
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(503, 241)
+        Me.TextBox3.Location = New System.Drawing.Point(519, 235)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 23)
         Me.TextBox3.TabIndex = 2
@@ -158,7 +158,7 @@ Partial Class purchases
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(605, 289)
+        Me.Label7.Location = New System.Drawing.Point(621, 283)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(56, 15)
         Me.Label7.TabIndex = 8
@@ -168,7 +168,7 @@ Partial Class purchases
         '
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Items.AddRange(New Object() {"احذية", "حقائب"})
-        Me.ComboBox4.Location = New System.Drawing.Point(465, 281)
+        Me.ComboBox4.Location = New System.Drawing.Point(481, 275)
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(121, 23)
         Me.ComboBox4.TabIndex = 9
@@ -217,7 +217,7 @@ Partial Class purchases
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(605, 334)
+        Me.Label8.Location = New System.Drawing.Point(621, 328)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(44, 15)
         Me.Label8.TabIndex = 8
@@ -227,7 +227,7 @@ Partial Class purchases
         '
         Me.ComboBox5.FormattingEnabled = True
         Me.ComboBox5.Items.AddRange(New Object() {"احذية", "حقائب"})
-        Me.ComboBox5.Location = New System.Drawing.Point(465, 331)
+        Me.ComboBox5.Location = New System.Drawing.Point(481, 325)
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(121, 23)
         Me.ComboBox5.TabIndex = 9
@@ -269,7 +269,7 @@ Partial Class purchases
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(626, 88)
+        Me.Label10.Location = New System.Drawing.Point(642, 82)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(104, 15)
         Me.Label10.TabIndex = 13
@@ -278,7 +278,7 @@ Partial Class purchases
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(503, 85)
+        Me.TextBox5.Location = New System.Drawing.Point(519, 79)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(100, 23)
         Me.TextBox5.TabIndex = 2
