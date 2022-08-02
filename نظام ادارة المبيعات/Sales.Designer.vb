@@ -183,7 +183,7 @@ Partial Class Sales
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7})
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(188, 176)
+        Me.ListView1.Location = New System.Drawing.Point(161, 176)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.ListView1.RightToLeftLayout = True

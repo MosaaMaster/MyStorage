@@ -62,6 +62,7 @@ Partial Class retail
         Me.Label15 = New System.Windows.Forms.Label()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button2
@@ -382,11 +383,21 @@ Partial Class retail
         Me.ComboBox4.Size = New System.Drawing.Size(121, 23)
         Me.ComboBox4.TabIndex = 63
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(215, 395)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 64
+        Me.Button5.Text = "خزن"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'retail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.TextBox11)
         Me.Controls.Add(Me.Label15)
@@ -468,4 +479,5 @@ Partial Class retail
     Friend WithEvents Label15 As Label
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Button5 As Button
 End Class

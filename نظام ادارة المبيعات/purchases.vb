@@ -3,4 +3,5 @@
         Label10.Visible = True
         TextBox5.Visible = True
     End Sub
+
 End Class
