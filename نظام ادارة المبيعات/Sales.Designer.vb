@@ -22,6 +22,7 @@ Partial Class Sales
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -37,14 +38,6 @@ Partial Class Sales
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.ColumnHeader1 = New System.Windows.Forms.ColumnHeader()
-        Me.ColumnHeader2 = New System.Windows.Forms.ColumnHeader()
-        Me.ColumnHeader3 = New System.Windows.Forms.ColumnHeader()
-        Me.ColumnHeader4 = New System.Windows.Forms.ColumnHeader()
-        Me.ColumnHeader5 = New System.Windows.Forms.ColumnHeader()
-        Me.ColumnHeader6 = New System.Windows.Forms.ColumnHeader()
-        Me.ColumnHeader7 = New System.Windows.Forms.ColumnHeader()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
@@ -53,6 +46,15 @@ Partial Class Sales
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewImageColumn()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -66,6 +68,7 @@ Partial Class Sales
         '
         'TextBox1
         '
+        Me.TextBox1.Enabled = False
         Me.TextBox1.Location = New System.Drawing.Point(597, 37)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 23)
@@ -100,9 +103,9 @@ Partial Class Sales
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(421, 37)
+        Me.TextBox2.Location = New System.Drawing.Point(409, 37)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox2.Size = New System.Drawing.Size(112, 23)
         Me.TextBox2.TabIndex = 5
         '
         'Label4
@@ -116,6 +119,7 @@ Partial Class Sales
         '
         'TextBox3
         '
+        Me.TextBox3.Enabled = False
         Me.TextBox3.Location = New System.Drawing.Point(240, 37)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 23)
@@ -178,54 +182,6 @@ Partial Class Sales
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(543, 23)
         Me.TextBox5.TabIndex = 16
-        '
-        'ListView1
-        '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7})
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(161, 176)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.ListView1.RightToLeftLayout = True
-        Me.ListView1.Size = New System.Drawing.Size(450, 97)
-        Me.ListView1.TabIndex = 17
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "Del"
-        Me.ColumnHeader1.Width = 30
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.Text = "تسلسل المادة"
-        Me.ColumnHeader2.Width = 80
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.Text = "رمز المادة"
-        Me.ColumnHeader3.Width = 70
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.Text = "الكمية"
-        Me.ColumnHeader4.Width = 50
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "سعر المفرد"
-        Me.ColumnHeader5.Width = 70
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "المبلغ الكلي"
-        Me.ColumnHeader6.Width = 80
-        '
-        'ColumnHeader7
-        '
-        Me.ColumnHeader7.Text = "صورة الموديل"
-        Me.ColumnHeader7.Width = 90
         '
         'Label10
         '
@@ -293,11 +249,76 @@ Partial Class Sales
         Me.Button2.Text = "البحث"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(218, 399)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 26
+        Me.Button3.Text = "خزن"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
+        Me.DataGridView1.Location = New System.Drawing.Point(42, 140)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DataGridView1.RowTemplate.Height = 25
+        Me.DataGridView1.Size = New System.Drawing.Size(640, 150)
+        Me.DataGridView1.TabIndex = 27
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "تسلسل المادة"
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "رمز المادة"
+        Me.Column2.Name = "Column2"
+        Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "الكمية"
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "سعر المفرد"
+        Me.Column4.Name = "Column4"
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "المبلغ الكلي"
+        Me.Column5.Name = "Column5"
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "صورة الموديل"
+        Me.Column6.Name = "Column6"
+        Me.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
         'Sales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox8)
@@ -306,7 +327,6 @@ Partial Class Sales
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -324,6 +344,7 @@ Partial Class Sales
         Me.Controls.Add(Me.Label1)
         Me.Name = "Sales"
         Me.Text = "Sales"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -344,14 +365,6 @@ Partial Class Sales
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents ListView1 As ListView
-    Friend WithEvents ColumnHeader1 As ColumnHeader
-    Friend WithEvents ColumnHeader2 As ColumnHeader
-    Friend WithEvents ColumnHeader3 As ColumnHeader
-    Friend WithEvents ColumnHeader4 As ColumnHeader
-    Friend WithEvents ColumnHeader5 As ColumnHeader
-    Friend WithEvents ColumnHeader6 As ColumnHeader
-    Friend WithEvents ColumnHeader7 As ColumnHeader
     Friend WithEvents Label10 As Label
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents TextBox7 As TextBox
@@ -360,4 +373,12 @@ Partial Class Sales
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewComboBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewImageColumn
 End Class

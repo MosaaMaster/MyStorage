@@ -26,3 +26,75 @@ C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام اد�
 C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.people.resources
 C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.retail.resources
 C:\Users\lenovo\source\repos\نظام ادارة المبيعات\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.other_activities.resources
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.exe
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.deps.json
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.runtimeconfig.json
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.runtimeconfig.dev.json
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.dll
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\ref\نظام ادارة المبيعات.dll
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.pdb
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.vbproj.AssemblyReference.cache
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Form1.resources
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Management.resources
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.materials_management.resources
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.MoneyBox.resources
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.other_activities.resources
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.passwords.resources
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.people.resources
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.purchases.resources
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Reports.resources
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.retail.resources
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Sales.resources
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.vbproj.GenerateResource.cache
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.AssemblyInfoInputs.cache
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.AssemblyInfo.vb
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.vbproj.CoreCompileInputs.cache
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.vbproj.CopyComplete
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.dll
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\ref\نظام ادارة المبيعات.dll
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.pdb
+E:\repos\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.genruntimeconfig.cache
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.exe
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.deps.json
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.runtimeconfig.json
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.runtimeconfig.dev.json
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\ref\نظام ادارة المبيعات.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\نظام ادارة المبيعات.pdb
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.vbproj.AssemblyReference.cache
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Form1.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Management.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.materials_management.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.MoneyBox.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.other_activities.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.passwords.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.people.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.purchases.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Reports.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.retail.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Sales.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.vbproj.GenerateResource.cache
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.GeneratedMSBuildEditorConfig.editorconfig
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.AssemblyInfoInputs.cache
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.AssemblyInfo.vb
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.vbproj.CoreCompileInputs.cache
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.vbproj.CopyComplete
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\ref\نظام ادارة المبيعات.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.pdb
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.genruntimeconfig.cache
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.login.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Resources.resources
