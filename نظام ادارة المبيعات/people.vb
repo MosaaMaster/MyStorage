@@ -3,139 +3,24 @@ Public Class people
     Dim sqlconn As New SqlConnection("server=DESKTOP-GKVLA13 ;database=sales_management;integrated security =true")
     Dim sqlcom As New SqlCommand("", sqlconn)
 
-    '---------------------Runcommand-----------------------
-    'داله تقوم بدخال البيانات او ارجاع البيانات او تحديدث البيانات من خلال اعطائها جمله س كو ال
-    Sub Runcommand(sqlcommand As String, Optional message As String = "")
-        Try
-            If sqlconn.State = ConnectionState.Closed Then
-                sqlconn.Open()
-
-                sqlcom.CommandText = sqlcommand
-                sqlcom.ExecuteNonQuery()
-                If message <> "" Then
-                    MsgBox(message)
-                End If
-
-
-            End If
-
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-
-        Finally
-            If sqlconn.State = ConnectionState.Open Then
-
-                sqlconn.Close()
-
-            End If
-        End Try
-
-    End Sub
-
-    '-----------------ClearData-------------------------------
-
-    'داله تقوم بحذف جميع بيانات الفورم من الفورم فقط ليقوم المستخدم بدخال بينات جديد
-    Sub ClearData()
-        For Each c As Control In Panel1.Controls
-            If TypeOf c Is TextBox Then
-                c.Text = ""
-
-            End If
-            If TypeOf c Is ComboBox Then
-                c.Text = ""
-
-
-            End If
-        Next
-    End Sub
-
-    '------------------------Get_Table-----------------------------------------
-    Function Get_Table(selectcommand As String) As DataTable
-        Try
-            Dim Table As New DataTable
-            If sqlconn.State = ConnectionState.Closed Then
-                sqlconn.Open()
-                sqlcom.CommandText = selectcommand
-                Table.Load(sqlcom.ExecuteReader)
-                Return Table
-            End If
-
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-            Return New DataTable
-
-        Finally
-            If sqlconn.State = ConnectionState.Open Then
-                sqlconn.Close()
-
-            End If
-
-        End Try
-
-    End Function
-    'داله تقوم بجلب اخر ادي الى الشخص مع زيادتها بمقدار واحد لانشاء ايدي جديد 
-    Function GetAutoNumber(Table_Name As String, ColName As String) As String
-        Dim str As String = "select max(" & ColName & ") +1 from " & Table_Name
-
-        Dim AutoNumber As String
-        Dim tbl As New DataTable
-        tbl = Get_Table(str)
-        ' AutoNumber = tbl.Rows(0)(0)
-        If tbl.Rows(0)(0) Is DBNull.Value Then
-            AutoNumber = "1"
-        Else
-            AutoNumber = tbl.Rows(0)(0)
-
-        End If
-        Return AutoNumber
-
-    End Function
     ' يقوم بخذ جميع بيانات الفورم ورسالها اله قاعده الينانات لخزن جميع المعلومات
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         If ComboBox1.Text = Trim("مجهز") Then
 
-            Runcommand("insert into supplier(su_id,name,debt_t,statee,address,notes,phone_num )values(" & TextBox1.Text & ",'" & TextBox2.Text & "'," & TextBox3.Text & ",'" & ComboBox2.Text & "','" & TextBox5.Text & "','" & TextBox7.Text & "','" & TextBox6.Text & "' )", "add elemant....")
-            ClearData()
+            functions.Runcommand("insert into supplier(su_id,name,debt_t,statee,address,notes,phone_num )values(" & TextBox1.Text & ",'" & TextBox2.Text & "'," & TextBox3.Text & ",'" & ComboBox2.Text & "','" & TextBox5.Text & "','" & TextBox7.Text & "','" & TextBox6.Text & "' )", "add elemant....")
+            functions.ClearData(Me)
             ' TextBox1.Text = GetAutoNumber("supplier", "su_id")
         ElseIf ComboBox1.Text = Trim("مشتري جملة") Then
 
 
-            Runcommand("insert into customers(cu_id,name,debt,statee,address,notes,phone_num )values(" & TextBox1.Text & ",'" & TextBox2.Text & "'," & TextBox3.Text & ",'" & ComboBox2.Text & "','" & TextBox5.Text & "','" & TextBox7.Text & "','" & TextBox6.Text & "' )", "add elemant....")
-            ClearData()
+            functions.Runcommand("insert into customers(cu_id,name,debt,statee,address,notes,phone_num )values(" & TextBox1.Text & ",'" & TextBox2.Text & "'," & TextBox3.Text & ",'" & ComboBox2.Text & "','" & TextBox5.Text & "','" & TextBox7.Text & "','" & TextBox6.Text & "' )", "add elemant....")
+            functions.ClearData(Me)
             ' TextBox1.Text = GetAutoNumber("customers", "cu_id")
         End If
 
     End Sub
-    '---------------------------GetTable---------------------
-    'داله تقوم بجلب اي جدول من قاعده
-    'البيانات من خلال تحديد
-    'اسم الجدول فقط سوفه ترجع جميع البيانات 
-    'الملخزونه في ذالك الجدول
-    'select *  from Name_Table;
-    Function GetTable(selectcommand As String) As DataTable
-        Try
-            Dim tb As New DataTable()
-            If sqlconn.State = ConnectionState.Closed Then
-                sqlconn.Open()
-                sqlcom.CommandText = selectcommand
-                tb.Load(sqlcom.ExecuteReader())
-                Return tb
 
-            End If
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-            Return New DataTable
-        Finally
-            If sqlconn.State = ConnectionState.Open Then
-                sqlconn.Close()
-            End If
-
-        End Try
-    End Function
     '------------------comboBox1_changed-------------------------
 
     'زر التعديل
@@ -148,14 +33,17 @@ Public Class people
     End Sub
     'عندما يقوم المستخدم بتحديد نوع الشخص المضاف هل هو مجهز او مبيعات جمله 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-        Enabled_Text_true()
+
+        functions.Enabled_Text_true(Me)
+
         If ComboBox1.Text = Trim("مجهز") Then
 
-            TextBox1.Text = GetAutoNumber("supplier", "su_id") 'سوفه يقوم بجلب اخر قيمه وزياده بمقدار واحد لينشاء ادي جديدمختلف عن السابق برقم واحد
+            Button1.Text = "حفظ المجهز"
+            TextBox1.Text = functions.GetAutoNumber("supplier", "su_id") 'سوفه يقوم بجلب اخر قيمه وزياده بمقدار واحد لينشاء ادي جديدمختلف عن السابق برقم واحد
             'اذا لم يضغط المستخدم على زر التعديل لا داعي لأسترجاع البيانات 
             'اي اسماءالمجهزين للكومبو بوكس الخاص بالتعديل
             If (ComboBox3.Visible = True) Then
-                Dim dt As DataTable = GetTable("select name from [dbo].[supplier] ") 'انشاء متغير يحمل حميع الاسماء 
+                Dim dt As DataTable = functions.GetTable("select name from [dbo].[supplier] ") 'انشاء متغير يحمل حميع الاسماء 
                 ComboBox3.DataSource = dt 'عرض جميع الاسماء في الكمبو بوكس
                 ComboBox3.DisplayMember = "name"
             Else
@@ -163,13 +51,14 @@ Public Class people
             End If
 
         ElseIf ComboBox1.Text = Trim("مشتري جملة") Then
+            Button1.Text = "حفظ الزبون"
             'نفس عمل الكود اسابق ولاكن اذه اختار المستخدم مشتريات جمله 
 
-            TextBox1.Text = GetAutoNumber("customers", "cu_id")
+            TextBox1.Text = functions.GetAutoNumber("customers", "cu_id")
             'اذا لم يضغط المستخدم على زر التعديل لا داعي لأسترجاع البيانات 
             'اي اسماءالمجهزين للكومبو بوكس الخاص بالتعديل
             If (ComboBox3.Visible = True) Then
-                Dim dt As DataTable = GetTable("select name from [dbo].[customers] ")
+                Dim dt As DataTable = functions.GetTable("select name from [dbo].[customers] ")
                 ComboBox3.DataSource = dt
                 ComboBox3.DisplayMember = "name"
             Else
@@ -181,7 +70,8 @@ Public Class people
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        ClearData() 'داله تقوم بحذف جميع البيانات دخل الفورم فقط 
+
+        functions.ClearData(Me) 'داله تقوم بحذف جميع البيانات دخل الفورم فقط 
     End Sub
 
 
@@ -243,13 +133,7 @@ Public Class people
 
             End Try
 
-
-
         End If
-
-
-
-
 
     End Sub
     'يقوم بتحديث البيانات السابقه من خلال اختيار
@@ -259,12 +143,12 @@ Public Class people
         'عنده اختيار المجهز يقوم بسترجاع اسماء المجهزين ومن بعدهانقوم بالتعديل 
         If ComboBox1.Text = Trim("مجهز") Then
 
-            Runcommand("Update  supplier SET name = '" & TextBox2.Text & "',phone_num='" & TextBox6.Text & "',address='" & TextBox5.Text & "',debt_t='" & TextBox3.Text & "',statee='" & ComboBox2.Text & "',notes='" & TextBox7.Text & "' where su_id = '" & TextBox1.Text & " ' ", "   updata elemant in supplier....")
+            functions.Runcommand("Update  supplier SET name = '" & TextBox2.Text & "',phone_num='" & TextBox6.Text & "',address='" & TextBox5.Text & "',debt_t='" & TextBox3.Text & "',statee='" & ComboBox2.Text & "',notes='" & TextBox7.Text & "' where su_id = '" & TextBox1.Text & " ' ", "   updata elemant in supplier....")
 
             'عنده اختيار "مشتري جمله" يقوم بسترجاع اسماء المجهزين ومن بعدهانقوم بالتعديل 
         ElseIf ComboBox1.Text = Trim("مشتري جملة") Then
 
-            Runcommand("Update  customers SET name = '" & TextBox2.Text & "',phone_num='" & TextBox6.Text & "',address='" & TextBox5.Text & "',debt='" & TextBox3.Text & "',statee='" & ComboBox2.Text & "',notes='" & TextBox7.Text & "' where cu_id = '" & TextBox1.Text & " ' ", "   updata elemant in coustomer....")
+            functions.Runcommand("Update  customers SET name = '" & TextBox2.Text & "',phone_num='" & TextBox6.Text & "',address='" & TextBox5.Text & "',debt='" & TextBox3.Text & "',statee='" & ComboBox2.Text & "',notes='" & TextBox7.Text & "' where cu_id = '" & TextBox1.Text & " ' ", "   updata elemant in coustomer....")
 
         End If
 
@@ -280,26 +164,10 @@ Public Class people
         ComboBox3.Visible = False
         Button4.Visible = False
         TextBox3.Text = 0
-        Enabled_Text_fulse()
+        functions.Enabled_Text_fulse(Me)
+        Button1.Text = ""
     End Sub
-    Sub Enabled_Text_fulse()
-        For Each c As Control In Panel1.Controls
-            If TypeOf c Is TextBox Then
-                c.Enabled = False
 
-            End If
-
-        Next
-    End Sub
-    Sub Enabled_Text_true()
-        For Each c As Control In Panel1.Controls
-            If TypeOf c Is TextBox Then
-                c.Enabled = True
-
-            End If
-
-        Next
-    End Sub
 
     'عند مغادرت حقل ادخال
     'الاسم يقوم بالبحث عن الاسم الموجود  داخل الحقل اذه كان ضمن الاسماء الموجوده
@@ -357,14 +225,7 @@ Public Class people
 
             sqlconn.Close()
 
-
-
         End If
-
-
-
-
-
 
     End Sub
 
@@ -373,5 +234,5 @@ Public Class people
             TextBox3.Text = 0
         End If
     End Sub
-End Class
 
+End Class

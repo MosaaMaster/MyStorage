@@ -2,93 +2,16 @@
 Class purchases
     Dim sqlconn As New SqlConnection("server=DESKTOP-GKVLA13 ;database=sales_management;integrated security =true")
     Dim sqlcom As New SqlCommand("", sqlconn)
-    Sub Runcommand(sqlcommand As String, Optional message As String = "")
-        Try
-            If sqlconn.State = ConnectionState.Closed Then
-                sqlconn.Open()
-
-                sqlcom.CommandText = sqlcommand
-                sqlcom.ExecuteNonQuery()
-                If message <> "" Then
-                    MsgBox(message)
-                End If
 
 
-            End If
-
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-
-        Finally
-            If sqlconn.State = ConnectionState.Open Then
-
-                sqlconn.Close()
-
-            End If
-        End Try
-
-    End Sub
-    Function GetAutoNumber(Table_Name As String, ColName As String) As Integer
-
-        Dim r As SqlDataReader
-        Dim num As Integer
-        Try
-            sqlconn.Open()
-            Dim q As String
-            q = "select max(" & ColName & ") as n from " & Table_Name
-            sqlcom = New SqlCommand(q, sqlconn)
-            r = sqlcom.ExecuteReader
-
-            While (r.Read)
-                If (r.IsDBNull(0) = True) Then
-                    num = 0
-                Else
-                    num = r.GetInt32("n")
-                End If
-
-            End While
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        Finally
-            If sqlconn.State = ConnectionState.Open Then
-                sqlconn.Close()
-            End If
-
-        End Try
-
-        Return num + 1
-    End Function
-
-    Function GetTable(selectcommand As String) As DataTable
-        Try
-            Dim tb As New DataTable()
-            If sqlconn.State = ConnectionState.Closed Then
-                sqlconn.Open()
-                sqlcom.CommandText = selectcommand
-                tb.Load(sqlcom.ExecuteReader())
-                Return tb
-
-            End If
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-            Return New DataTable
-        Finally
-            If sqlconn.State = ConnectionState.Open Then
-                sqlconn.Close()
-            End If
-
-        End Try
-    End Function
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Label10.Visible = True
         TextBox5.Visible = True
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+        functions.Runcommand("insert into purchases(list_num,date,list_type,name)values(" & TextBox2.Text & ",'" & TextBox1.Text & "','" & ComboBox1.Text & "','" & ComboBox2.Text & "' )", "add elemant....")
     End Sub
 
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
@@ -156,12 +79,13 @@ Class purchases
 
     Private Sub purchases_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DataGridView1.MultiSelect = False
-        TextBox2.Text = GetAutoNumber("purchases", "list_num")
-        TextBox1.Text = Date.Now
-        Dim dt As DataTable = GetTable("select name from [dbo].[supplier] ") 'انشاء متغير يحمل حميع الاسماء 
-        ComboBox2.DataSource = dt 'عرض جميع الاسماء في الكمبو بوكس
+        TextBox2.Text = functions.GetAutoNumber1("purchases", "list_num")
+        TextBox1.Text = Date.Today
+        'انشاء متغير يحمل حميع الاسماء 
+        ComboBox2.DataSource = functions.GetCoumnNames("name", "supplier") 'عرض جميع الاسماء في الكمبو بوكس
         ComboBox2.DisplayMember = "name"
         ComboBox2.Text = ""
+
     End Sub
 
 End Class

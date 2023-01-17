@@ -58,11 +58,11 @@ Partial Class purchases
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(731, 38)
+        Me.Label1.Location = New System.Drawing.Point(748, 38)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(77, 15)
+        Me.Label1.Size = New System.Drawing.Size(38, 15)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "ألوقت والتاريخ"
+        Me.Label1.Text = "التاريخ"
         '
         'Label2
         '
