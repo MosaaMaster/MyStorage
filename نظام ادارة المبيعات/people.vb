@@ -1,6 +1,8 @@
 ﻿Imports System.Data.SqlClient
 Public Class people
-    Dim sqlconn As New SqlConnection("server=DESKTOP-GKVLA13 ;database=sales_management;integrated security =true")
+    'ايجاد اسم السيرفر
+    Dim ServerName As String = System.Net.Dns.GetHostName()
+    Dim sqlconn As New SqlConnection("server= " & ServerName & " ;database=sales_management;integrated security =true")
     Dim sqlcom As New SqlCommand("", sqlconn)
 
     ' يقوم بخذ جميع بيانات الفورم ورسالها اله قاعده الينانات لخزن جميع المعلومات
@@ -50,6 +52,7 @@ Public Class people
 
             End If
 
+
         ElseIf ComboBox1.Text = Trim("مشتري جملة") Then
             Button1.Text = "حفظ الزبون"
             'نفس عمل الكود اسابق ولاكن اذه اختار المستخدم مشتريات جمله 
@@ -61,8 +64,18 @@ Public Class people
                 Dim dt As DataTable = functions.GetTable("select name from [dbo].[customers] ")
                 ComboBox3.DataSource = dt
                 ComboBox3.DisplayMember = "name"
-            Else
+            End If
+        ElseIf ComboBox1.Text = Trim("زبون توصيل") Then
+            Button1.Text = "حفظ الزبون"
+            'نفس عمل الكود اسابق ولاكن اذه اختار المستخدم مشتريات جمله 
 
+            TextBox1.Text = functions.GetAutoNumber("delivery_customers", "de_id")
+            'اذا لم يضغط المستخدم على زر التعديل لا داعي لأسترجاع البيانات 
+            'اي اسماءالمجهزين للكومبو بوكس الخاص بالتعديل
+            If (ComboBox3.Visible = True) Then
+
+                ComboBox3.DataSource = functions.GetCoumnNames("name", "delivery_customers")
+                ComboBox3.DisplayMember = "name"
             End If
         End If
     End Sub

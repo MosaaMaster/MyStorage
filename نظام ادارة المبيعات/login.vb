@@ -1,79 +1,43 @@
-﻿Imports System.Data.SqlClient
+﻿
 Public Class login
-    Dim sqlconn As New SqlConnection("server=DESKTOP-GKVLA13 ;database=sales_management;integrated security =true")
-    Dim sqlcom As New SqlCommand("", sqlconn)
+    Private Sub TextBox1_Leave(sender As Object, e As EventArgs) Handles TextBox1.Leave
+        Dim User As String = functions.getOneValue("user_name", "Users", "user_name", TextBox1.Text, "string")
+        If (User = "") Then
 
-    Sub Runcommand(sqlcommand As String, Optional message As String = "")
-        Try
-            If sqlconn.State = ConnectionState.Closed Then
-                sqlconn.Open()
-
-                sqlcom.CommandText = sqlcommand
-                sqlcom.ExecuteNonQuery()
-                If message <> "" Then
-                    MsgBox(message)
-                End If
-
-
-            End If
-
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-
-        Finally
-            If sqlconn.State = ConnectionState.Open Then
-                sqlconn.Close()
-            End If
-        End Try
-
+            MsgBox("المستخدم غير موجود")
+            TextBox1.Clear()
+            TextBox1.Focus()
+            Exit Sub
+        End If
     End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim r As SqlDataReader
+        Dim User As String = functions.getOneValue("user_name", "Users", "user_name", TextBox1.Text, "string")
+
         Try
-            sqlconn.Open()
-            Dim q As String
-            q = "select * From [dbo].[Users] where user_name ='" & TextBox1.Text & "' "
-            sqlcom = New SqlCommand(q, sqlconn)
-            r = sqlcom.ExecuteReader
-            Dim noUser As Boolean = True
-            While r.Read
-                noUser = False
 
-                If (r.GetString("password") <> TextBox2.Text) Then
-                        MessageBox.Show("كلمة السر خاطئة")
-                        TextBox2.Focus()
-                        Exit Sub
-                    End If
-                    MsgBox(r.GetString("licenses"))
-
-                If (r.GetString("licenses") = "أدمن") Then
-                    Me.Hide()
-                    Form1.Show()
-                ElseIf (r.GetString("licenses") = "مستخدم") Then
-                    Me.Hide()
-                    Form1.Button1.Visible = False
-                    Form1.Button4.Visible = False
-                    Form1.Button5.Visible = False
-                    Form1.Button6.Visible = False
-                    Form1.Show()
-                End If
-            End While
-
-            If (noUser) Then
-                MsgBox("المستخدم غير موجود")
-                TextBox1.Clear()
-                TextBox1.Focus()
+            Dim pasw As String = functions.getOneValue("password", "Users", "user_name", TextBox1.Text, "string")
+            If (pasw <> TextBox2.Text) Then
+                MessageBox.Show("كلمة السر خاطئة")
+                TextBox2.Focus()
                 Exit Sub
             End If
+            Dim licenses As String = functions.getOneValue("licenses", "Users", "user_name", TextBox1.Text, "string")
+            MsgBox("مرحباً :" & User,, "سجلت الدخول بصيغة " & licenses)
+
+            If (licenses = "أدمن") Then
+                Me.Hide()
+                Form1.Show()
+            ElseIf (licenses = "مستخدم") Then
+                Me.Hide()
+                Form1.Button1.Visible = False
+                Form1.Button4.Visible = False
+                Form1.Button5.Visible = False
+                Form1.Button6.Visible = False
+                Form1.Show()
+            End If
+
         Catch ex As Exception
             MsgBox(ex.Message)
-
-        Finally
-            If sqlconn.State = ConnectionState.Open Then
-                sqlconn.Close()
-            End If
         End Try
 
 
@@ -140,4 +104,6 @@ Public Class login
             PictureBox1.Visible = False
         End If
     End Sub
+
+
 End Class

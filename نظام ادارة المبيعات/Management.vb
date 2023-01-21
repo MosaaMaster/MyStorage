@@ -15,4 +15,7 @@
         other_activities.ShowDialog()
     End Sub
 
+    Private Sub Management_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

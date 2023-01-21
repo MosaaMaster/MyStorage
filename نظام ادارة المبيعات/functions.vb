@@ -1,6 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Module functions
-    Dim sqlconn As New SqlConnection("server=DESKTOP-GKVLA13 ;database=sales_management;integrated security =true")
+    Dim ServerName As String = System.Net.Dns.GetHostName()
+    Dim sqlconn As New SqlConnection("server= " & ServerName & "  ;database=sales_management;integrated security =true")
     Dim sqlcom As New SqlCommand("", sqlconn)
 
     '---------------------Runcommand-----------------------
@@ -177,9 +178,50 @@ Module functions
     End Function
 
     'دالة استرجاع اسماء عامود معين
-    Function GetCoumnNames(col As String, table As String) As DataTable
-        Dim dt As DataTable = functions.GetTable("select " & col & " from [dbo].[" & table & "] ")
+    Function GetCoumnNames(col As String, table As String, Optional cu_type As String = "") As DataTable
+        Dim dt As DataTable
+        If (cu_type = "") Then
+            dt = functions.GetTable("select " & col & " from [dbo].[" & table & "]")
+        End If
         Return dt
     End Function
 
+    Function getOneValue(col As String, table As String, conCol As String, condition As String, ty As String)
+        Dim r As SqlDataReader
+        Dim resault As String = ""
+        Try
+            sqlconn.Open()
+            Dim q As String
+            q = "select " & col & " from " & table & " where " & conCol & " = '" & condition & "'"
+            sqlcom = New SqlCommand(q, sqlconn)
+            r = sqlcom.ExecuteReader
+            While r.Read
+
+                'TextBox4.Text = r.GetDecimal("debt")
+                'TextBox3.Text = r.GetInt32("cu_id")
+                'Dim typeOfMyVariable As TypeCode = Type.GetTypeCode("col".GetType())
+                'MsgBox(typeOfMyVariable.GetType)
+                If (ty = "string") Then
+                    resault = r.GetString(col)
+                ElseIf (ty = "decimal") Then
+                    resault = r.GetDecimal(col)
+                ElseIf (ty = "int") Then
+                    resault = r.GetInt32(col)
+                End If
+
+
+            End While
+            sqlconn.Close()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
+        Finally
+            If sqlconn.State = ConnectionState.Open Then
+                sqlconn.Close()
+
+            End If
+        End Try
+        Return resault
+    End Function
 End Module

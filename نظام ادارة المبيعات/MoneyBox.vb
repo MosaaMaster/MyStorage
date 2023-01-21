@@ -1,5 +1,4 @@
-﻿Imports System.Data.SqlClient
-Public Class MoneyBox
+﻿Public Class MoneyBox
     Dim bond_no = {1, 1, 1, 1, 1}
 
 
@@ -255,6 +254,7 @@ Public Class MoneyBox
     End Sub
 
     Private Sub MoneyBox_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'ComboBox2.DataSource = functions.GetCoumnNames("cu_id", "customers")
 
     End Sub
 

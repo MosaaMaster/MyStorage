@@ -30,49 +30,60 @@ Partial Class Management
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(546, 71)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Button1.Location = New System.Drawing.Point(780, 348)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(108, 36)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "المواد"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(546, 118)
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Button2.Location = New System.Drawing.Point(780, 263)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(108, 36)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "الأشخاص"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(524, 164)
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Button3.Location = New System.Drawing.Point(749, 180)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(97, 23)
+        Me.Button3.Size = New System.Drawing.Size(139, 36)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "الوصول للنظام"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(546, 210)
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Button4.Location = New System.Drawing.Point(780, 425)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(108, 36)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "انشطة اخرى"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Management
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(1142, 690)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.Name = "Management"
         Me.Text = "Management"
         Me.ResumeLayout(False)

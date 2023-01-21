@@ -34,37 +34,41 @@ Partial Class login
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Lucida Calligraphy", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(107, 66)
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Lucida Calligraphy", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(86, 104)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(98, 21)
+        Me.Label1.Size = New System.Drawing.Size(124, 24)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "user name"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Lucida Calligraphy", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(107, 125)
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
+        Me.Label2.Font = New System.Drawing.Font("Lucida Calligraphy", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(86, 146)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(90, 21)
+        Me.Label2.Size = New System.Drawing.Size(129, 24)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "password"
+        Me.Label2.Text = "password  "
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Lucida Calligraphy", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(245, 214)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Lucida Calligraphy", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.Location = New System.Drawing.Point(175, 256)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(138, 37)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "sign in"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(265, 67)
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.TextBox1.Location = New System.Drawing.Point(266, 104)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(152, 23)
@@ -72,7 +76,8 @@ Partial Class login
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(265, 126)
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.TextBox2.Location = New System.Drawing.Point(266, 147)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(35)
@@ -83,7 +88,7 @@ Partial Class login
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox1.Image = Global.نظام_ادارة_المبيعات.My.Resources.Resources.Blue_Eye_icon_logo_on_transparent_background_PNG
-        Me.PictureBox1.Location = New System.Drawing.Point(423, 126)
+        Me.PictureBox1.Location = New System.Drawing.Point(433, 146)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(27, 23)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -95,7 +100,8 @@ Partial Class login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(700, 433)
+        Me.BackgroundImage = Global.نظام_ادارة_المبيعات.My.Resources.download1
+        Me.ClientSize = New System.Drawing.Size(736, 433)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)

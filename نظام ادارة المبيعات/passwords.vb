@@ -1,35 +1,5 @@
-﻿Imports System.Data.SqlClient
-Public Class passwords
-    Dim sqlconn As New SqlConnection("server=DESKTOP-GKVLA13 ;database=sales_management;integrated security =true")
-    Dim sqlcom As New SqlCommand("", sqlconn)
+﻿Public Class passwords
 
-    Sub Runcommand(sqlcommand As String, Optional message As String = "")
-        Try
-            If sqlconn.State = ConnectionState.Closed Then
-                sqlconn.Open()
-                MsgBox("1")
-                sqlcom.CommandText = sqlcommand
-                MsgBox("2")
-                sqlcom.ExecuteNonQuery()
-                MsgBox("3")
-                If message <> "" Then
-                    MsgBox(message)
-                End If
-
-
-            End If
-
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-
-        Finally
-            If sqlconn.State = ConnectionState.Open Then
-                sqlconn.Close()
-            End If
-        End Try
-
-    End Sub
     Private Sub passwords_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PictureBox1.Visible = False
         ComboBox1.Items.Add("أدمن")
@@ -50,7 +20,7 @@ Public Class passwords
             MsgBox("الرجاء اختيار نوع المستخدم")
             Exit Sub
         End If
-        Runcommand("insert into Users(password,user_name,licenses)values('" & TextBox2.Text & "','" & TextBox1.Text & "','" & ComboBox1.Text & "')", "تمت العمليه بنجاح")
+        functions.Runcommand("insert into Users(password,user_name,licenses)values('" & TextBox2.Text & "','" & TextBox1.Text & "','" & ComboBox1.Text & "')", "تمت العمليه بنجاح")
         TextBox1.Clear()
         TextBox2.Clear()
         ComboBox1.Text = ""
@@ -58,26 +28,20 @@ Public Class passwords
 
 
     Private Sub TextBox1_Leave(sender As Object, e As EventArgs) Handles TextBox1.Leave
-        Dim cmd As SqlCommand
-        Dim rd As SqlDataReader
+
         'عنده مايقوم المستخدم بختيار "المجهز" يبحث
         'عن الاسم هل موجود او لا ضمن قاعده البيانات
         Try
-            sqlconn.Open()
-            cmd = New SqlCommand("select user_name from [dbo].[Users] where user_name ='" & TextBox1.Text & "'")
-            cmd.Connection = sqlconn
-            rd = cmd.ExecuteReader
-            If (rd.Read) Then
+
+            Dim user As String = functions.getOneValue("user_name", "Users", "user_name", TextBox1.Text, "string")
+
+            If (user <> "") Then
                 MessageBox.Show("الاسم موجود سابقا يرجا ادخال اسم جديد", "خطأ الاسم", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 TextBox1.Focus()
-
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
-        Finally
-            If sqlconn.State = ConnectionState.Open Then
-                sqlconn.Close()
-            End If
+
         End Try
 
     End Sub
