@@ -99,3 +99,7 @@ E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادار
 E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.login.resources
 E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.Resources.resources
 E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.ReportsResult.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\Guna.UI2.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\System.CodeDom.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\System.Management.dll
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\System.Management.dll

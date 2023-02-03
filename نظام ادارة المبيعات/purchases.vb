@@ -11,29 +11,29 @@ Class purchases
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        functions.Runcommand("insert into purchases(list_num,date,list_type,name,payment_type,material_type,country_source,notes,total_price)values(" & TextBox2.Text & ",'" & TextBox1.Text & "','" & ComboBox1.Text & "','" & ComboBox2.Text & "','" & ComboBox3.Text & "','" & ComboBox4.Text & "','" & ComboBox5.Text & "' , '" & TextBox3.Text & "' , '" & TextBox4.Text & "')", "add elemant....")
-        For i As Integer = 0 To DataGridView1.Rows.Count - 2
+        functions.Runcommand("insert into purchases(list_num,date,list_type,name,payment_type,material_type,country_source,notes,total_price)values(" & Guna2TextBox2.Text & ",'" & Guna2TextBox1.Text & "','" & ComboBox1.Text & "','" & ComboBox2.Text & "','" & ComboBox3.Text & "','" & ComboBox4.Text & "','" & ComboBox5.Text & "' , '" & TextBox3.Text & "' , '" & TextBox4.Text & "')", "add elemant....")
+        For i As Integer = 0 To Guna2DataGridView1.Rows.Count - 2
 
             'Dim bmp As Bitmap = DataGridView1.Rows(i).Cells(4).Value
             'Dim img As Image = DataGridView1.Rows(i).Cells(4).Value
             'Dim ms As New MemoryStream()
             'img.Save(ms, Image.Jpeg)
             'Dim data As Byte() = ms.ToArray()
-            functions.Runcommand("insert into purchases_items(model_code,quantity,price,total_price,ico,list_num) values ('" & DataGridView1.Rows(i).Cells(0).Value & "' ,' " & DataGridView1.Rows(i).Cells(1).Value & " ',' " & DataGridView1.Rows(i).Cells(2).Value & " ', ' " & DataGridView1.Rows(i).Cells(3).Value & " ' ,  '" & pictureinfo(i) & " '  , " & TextBox2.Text & " )", "add elemant....")
-            functions.Runcommand("insert into materials(model,quantity,price,image,type) values('" & DataGridView1.Rows(i).Cells(0).Value & "', ' " & DataGridView1.Rows(i).Cells(1).Value & " ' , ' " & DataGridView1.Rows(i).Cells(2).Value & " ' , '" & pictureinfo(i) & " ' , ' " & ComboBox4.Text & " ' )", "add elemant....")
+            functions.Runcommand("insert into purchases_items(model_code,quantity,price,total_price,ico,list_num) values ('" & Guna2DataGridView1.Rows(i).Cells(0).Value & "' ,' " & Guna2DataGridView1.Rows(i).Cells(1).Value & " ',' " & Guna2DataGridView1.Rows(i).Cells(2).Value & " ', ' " & Guna2DataGridView1.Rows(i).Cells(3).Value & " ' ,  '" & pictureinfo(i) & " '  , " & Guna2TextBox2.Text & " )", "add elemant....")
+            functions.Runcommand("insert into materials(model,quantity,price,image,type) values('" & Guna2DataGridView1.Rows(i).Cells(0).Value & "', ' " & Guna2DataGridView1.Rows(i).Cells(1).Value & " ' , ' " & Guna2DataGridView1.Rows(i).Cells(2).Value & " ' , '" & pictureinfo(i) & " ' , ' " & ComboBox4.Text & " ' )", "add elemant....")
 
         Next
         c = 0
         total_sum = 0
     End Sub
     Dim c As Integer = 0
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellClick
         ' Check if the cell clicked is a DataGridViewImageColumn
 
         Try
             Dim cellValue(3) As Object
             For i = 0 To 3
-                cellValue(i) = DataGridView1.Rows(e.RowIndex).Cells(i).Value
+                cellValue(i) = Guna2DataGridView1.Rows(e.RowIndex).Cells(i).Value
             Next
 
             'اذا كان التحديد على زر الحذف
@@ -47,20 +47,20 @@ Class purchases
                     ' MessageBox.Show("هل انت متأكد من رغبتك بحذف السطر المحدد؟", "تأكيد الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) As dialog.result
 
                     'تحديد السطر بناء على المدخل
-                    Dim selectedRowIndex As Integer = DataGridView1.SelectedRows(0).Index
+                    Dim selectedRowIndex As Integer = Guna2DataGridView1.SelectedRows(0).Index
                     'اذا لم يكن السطر المحدد اصغر من الصفر
                     If Not selectedRowIndex < 0 Then
                         'حذف السطر المحدد
                         Dim d As DialogResult = MessageBox.Show("هل انت متأكد من رغبتك بحذف السطر المحدد؟", "تأكيد الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2)
                         If (d = DialogResult.Yes) Then
-                            DataGridView1.Rows.RemoveAt(selectedRowIndex)
+                            Guna2DataGridView1.Rows.RemoveAt(selectedRowIndex)
                         End If
                     End If
                 End If
                 'DataGridView1.Rows.RemoveAt(DataGridView1.SelectedRows(0).Index)
             Else
                 'اذا تم النقر على الصورة
-                If DataGridView1.Columns(e.ColumnIndex).Name = "Column6" Then
+                If Guna2DataGridView1.Columns(e.ColumnIndex).Name = "Column5" Then
                     ' The cell clicked is a DataGridViewImageColumn with the name "ImageColumn"
                     ' You can now access the cell value and do something with it
                     'لا حاجة لها
@@ -77,7 +77,7 @@ Class purchases
                         'اخذ مسار واسم ونوع الصورة
                         ' MsgBox(DataGridView1.Rows.Count,, "عدد الأسطر")
 
-                        ReDim Preserve pictureinfo(DataGridView1.Rows.Count - 1)
+                        ReDim Preserve pictureinfo(Guna2DataGridView1.Rows.Count - 1)
                         pictureinfo(e.RowIndex) = filePath
                         'If Not DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).Value Is DBNull.Value Then
 
@@ -90,10 +90,10 @@ Class purchases
                         'لوحة الكترونية
                         Dim bitmap As New Bitmap(filePath)
                         'تثبيت قيمة اللوحة الالكترونية داخل مربع الصورة
-                        DataGridView1(e.ColumnIndex, e.RowIndex).Value = bitmap
-                        DataGridView1.Refresh()
+                        Guna2DataGridView1(e.ColumnIndex, e.RowIndex).Value = bitmap
+                        Guna2DataGridView1.Refresh()
                     End If
-                ElseIf (DataGridView1.Columns(e.ColumnIndex).Name = "Column2") Then
+                ElseIf (Guna2DataGridView1.Columns(e.ColumnIndex).Name = "Column1") Then
 
                 End If
             End If
@@ -109,10 +109,10 @@ Class purchases
     End Sub
 
     Private Sub purchases_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        DataGridView1.MultiSelect = False
-        TextBox2.Text = functions.GetAutoNumber1("purchases", "list_num")
-        TextBox1.Text = Date.Today
+        Guna2DataGridView1.ColumnHeadersVisible = True
+        Guna2DataGridView1.MultiSelect = False
+        Guna2TextBox2.Text = functions.GetAutoNumber1("purchases", "list_num")
+        Guna2TextBox1.Text = Date.Today
         'انشاء متغير يحمل حميع الاسماء 
         ComboBox2.DataSource = functions.GetCoumnNames("name", "supplier") 'عرض جميع الاسماء في الكمبو بوكس
         ComboBox2.DisplayMember = "name"
@@ -127,22 +127,22 @@ Class purchases
         'DataGridView1.Columns(Column2).AutoComplete = True
     End Sub
     Dim total_sum As Integer = 0
-    Private Sub DataGridView1_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellValueChanged
+    Private Sub DataGridView1_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs)
         If (e.RowIndex > -1) Then
             ' Make sure the column index is the one you want to sum
-            If e.ColumnIndex = Column4.Index Then
+            If e.ColumnIndex = Column3.Index Then
                 ' Get the value of the two columns you want to sum
 
                 'MsgBox(e.ColumnIndex)
 
-                Dim value2 As Double = DataGridView1.Rows(e.RowIndex).Cells(1).Value
-                Dim value1 As Double = DataGridView1.Rows(e.RowIndex).Cells(2).Value
+                Dim value2 As Double = Guna2DataGridView1.Rows(e.RowIndex).Cells(1).Value
+                Dim value1 As Double = Guna2DataGridView1.Rows(e.RowIndex).Cells(2).Value
                 ' Add the values together
                 Dim sum As Double = value1 * value2
                 total_sum += sum
                 TextBox4.Text = total_sum
                 ' Set the value of the third column to the sum
-                DataGridView1.Rows(e.RowIndex).Cells(Column5.Index).Value = sum
+                Guna2DataGridView1.Rows(e.RowIndex).Cells(Column4.Index).Value = sum
             End If
         End If
     End Sub
@@ -205,13 +205,13 @@ Class purchases
     '    End Try
     'End Sub
 
-    Private Sub DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellMouseEnter
+    Private Sub DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs)
         If (e.RowIndex > -1 And e.ColumnIndex = 4) Then
             'MsgBox(e.RowIndex,, e.ColumnIndex)
             If (pictureinfo(0) <> "") Then
                 If (e.RowIndex < pictureinfo.Length) Then
-                    If (DataGridView1.Columns(e.ColumnIndex).Name = "Column6") Then
-                        If (Not DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).Value Is DBNull.Value) Then
+                    If (Guna2DataGridView1.Columns(e.ColumnIndex).Name = "Column5") Then
+                        If (Not Guna2DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).Value Is DBNull.Value) Then
                             ' MsgBox(e.RowIndex,, e.ColumnIndex)
                             PictureBox1.ImageLocation = pictureinfo(e.RowIndex)
                         End If

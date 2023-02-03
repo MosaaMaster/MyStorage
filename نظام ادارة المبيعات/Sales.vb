@@ -5,11 +5,11 @@ Public Class Sales
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
-        TextBox1.Text = GetAutoNumber("sales", "list_num")
-        Runcommand("insert into sales(list_num,sale_type,date,name,payment_type,money_type,notes,bill_cost,discount) values('" & TextBox1.Text & "','" & "جملة" & "','" & TextBox2.Text & "','" & ComboBox2.Text & "','" & ComboBox1.Text & "', '" & "دولار" & "' , '" & TextBox5.Text & " ' , " & total_sum & " , ' " & TextBox8.Text & " ' )", "add item to database")
+        Guna2TextBox1.Text = GetAutoNumber("sales", "list_num")
+        Runcommand("insert into sales(list_num,sale_type,date,name,payment_type,money_type,notes,bill_cost,discount) values('" & Guna2TextBox1.Text & "','" & "جملة" & "','" & Guna2TextBox2.Text & "','" & ComboBox2.Text & "','" & ComboBox1.Text & "', '" & "دولار" & "' , '" & Guna2TextBox5.Text & " ' , " & total_sum & " , ' " & TextBox8.Text & " ' )", "add item to database")
         For i As Integer = 0 To DataGridView1.Rows.Count - 2
             MsgBox(1)
-            functions.Runcommand("insert into sales_items(model_code,quantity,price,total_price,ico,list_num) values ('" & DataGridView1.Rows(i).Cells(0).Value & "' ,' " & DataGridView1.Rows(i).Cells(1).Value & " ',' " & DataGridView1.Rows(i).Cells(2).Value & " ', ' " & DataGridView1.Rows(i).Cells(3).Value & " ' , ' " & DataGridView1.Rows(i).Cells(4).Value.ToString() & " '  , ' " & TextBox1.Text & " ' )", "add elemant....")
+            functions.Runcommand("insert into sales_items(model_code,quantity,price,total_price,ico,list_num) values ('" & DataGridView1.Rows(i).Cells(0).Value & "' ,' " & DataGridView1.Rows(i).Cells(1).Value & " ',' " & DataGridView1.Rows(i).Cells(2).Value & " ', ' " & DataGridView1.Rows(i).Cells(3).Value & " ' , ' " & DataGridView1.Rows(i).Cells(4).Value.ToString() & " '  , ' " & Guna2TextBox1.Text & " ' )", "add elemant....")
             MsgBox(2)
             functions.Runcommand("UPDATE materials set quantity = quantity -  " & Val(DataGridView1.Rows(i).Cells(1).Value.ToString()) & "  WHERE model = " & "(' & DataGridView1.Rows(i).Cells(0).Value.ToString() ')", "Update quantity....")
 
@@ -20,12 +20,12 @@ Public Class Sales
     End Sub
 
     Private Sub Sales_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TextBox2.Text = Date.Today
+        Guna2TextBox2.Text = Date.Today
         Dim dt As DataTable = Get_Table("select name from [dbo].[customers] ")
         ComboBox2.DataSource = dt
         ComboBox2.DisplayMember = "name"
 
-        TextBox1.Text = functions.GetAutoNumber1("sales", "list_num")
+        Guna2TextBox1.Text = functions.GetAutoNumber1("sales", "list_num")
 
         Column2.DataSource = functions.GetCoumnNames("model", "materials")
         Column2.DisplayMember = "model"
@@ -64,7 +64,7 @@ Public Class Sales
                 ' Add the values together
                 Dim sum As Double = value1 * value2
                 total_sum += sum
-                TextBox7.Text = total_sum
+                Guna2TextBox7.Text = total_sum
                 ' Set the value of the third column to the sum
                 DataGridView1.Rows(e.RowIndex).Cells(Column5.Index).Value = sum
             End If
@@ -124,7 +124,7 @@ Public Class Sales
                     'التحقق من اذا كان السطر لا يحتوي بيانات
                     If Not DataGridView1.Rows(e.RowIndex).Cells(0).Value Is Nothing Then
                         ' Handle the case when the user did not select any value
-                        TextBox6.Text = functions.getOneValue("quantity", "materials", "model", DataGridView1.Rows(e.RowIndex).Cells(0).Value.ToString(), "int")
+                        Guna2TextBox6.Text = functions.getOneValue("quantity", "materials", "model", DataGridView1.Rows(e.RowIndex).Cells(0).Value.ToString(), "int")
 
                     Else
                         'اضهار كمية المادة عند تحديد سطر المادة
@@ -175,9 +175,9 @@ Public Class Sales
         '    End If
         'End Try
         'استرجاع دين الزبون
-        TextBox4.Text = functions.getOneValue("debt", "customers", "name", ComboBox2.Text, "decimal")
+        Guna2TextBox4.Text = functions.getOneValue("debt", "customers", "name", ComboBox2.Text, "decimal")
         'استرجاع رقم الزبون
-        TextBox3.Text = functions.getOneValue("cu_id", "customers", "name", ComboBox2.Text, "int")
+        Guna2TextBox3.Text = functions.getOneValue("cu_id", "customers", "name", ComboBox2.Text, "int")
     End Sub
 
     Private Sub DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellMouseEnter
@@ -210,4 +210,11 @@ Public Class Sales
         End If
     End Sub
 
+    Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox2.TextChanged
+
+    End Sub
 End Class

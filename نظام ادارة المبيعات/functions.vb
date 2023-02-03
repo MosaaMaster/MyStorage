@@ -1,4 +1,6 @@
 ﻿Imports System.Data.SqlClient
+Imports Guna.UI2.WinForms
+
 Module functions
     Dim ServerName As String = System.Net.Dns.GetHostName()
     Dim sqlconn As New SqlConnection("server= " & ServerName & "  ;database=sales_management;integrated security =true")
@@ -34,11 +36,11 @@ Module functions
     'داله تقوم بحذف جميع بيانات الفورم من الفورم فقط ليقوم المستخدم بدخال بينات جديد
     Sub ClearData(fo As Form)
         For Each c As Control In fo.Controls
-            If TypeOf c Is TextBox Then
+            If TypeOf c Is Guna2TextBox Then
                 c.Text = ""
 
             End If
-            If TypeOf c Is ComboBox Then
+            If TypeOf c Is Guna2ComboBox Then
                 c.Text = ""
             End If
         Next
@@ -46,7 +48,7 @@ Module functions
     'غلق الادخال لكل الفورمة
     Sub Enabled_Text_fulse(f As Form)
         For Each c As Control In f.Controls
-            If TypeOf c Is TextBox Then
+            If TypeOf c Is Guna2TextBox Then
                 c.Enabled = False
 
             End If
@@ -58,7 +60,7 @@ Module functions
 
         For Each c As Control In f.Controls
 
-            If TypeOf c Is TextBox Then
+            If TypeOf c Is Guna2TextBox Then
 
                 c.Enabled = True
 
@@ -171,11 +173,8 @@ Module functions
     End Function
 
     'دالة استرجاع اسماء عامود معين
-    Function GetCoumnNames(col As String, table As String, Optional cu_type As String = "") As DataTable
-        Dim dt As DataTable
-        If (cu_type = "") Then
-            dt = functions.GetTable("select " & col & " from [dbo].[" & table & "]")
-        End If
+    Function GetCoumnNames(col As String, table As String) As DataTable
+        Dim dt As DataTable = functions.GetTable("select " & col & " from [dbo].[" & table & "]")
         Return dt
     End Function
 
