@@ -16,19 +16,14 @@ Module functions
                 If message <> "" Then
                     MsgBox(message)
                 End If
-
-
             End If
-
 
         Catch ex As Exception
             MsgBox(ex.Message)
 
         Finally
             If sqlconn.State = ConnectionState.Open Then
-
                 sqlconn.Close()
-
             End If
         End Try
 
@@ -45,8 +40,6 @@ Module functions
             End If
             If TypeOf c Is ComboBox Then
                 c.Text = ""
-
-
             End If
         Next
     End Sub
