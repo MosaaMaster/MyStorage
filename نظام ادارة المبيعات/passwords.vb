@@ -2,42 +2,42 @@
 
     Private Sub passwords_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PictureBox1.Visible = False
-        ComboBox1.Items.Add("أدمن")
-        ComboBox1.Items.Add("مستخدم")
-        TextBox2.MaxLength = 8
+        Guna2ComboBox1.Items.Add("أدمن")
+        Guna2ComboBox1.Items.Add("مستخدم")
+        Guna2TextBox2.MaxLength = 8
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If (TextBox1.Text = "") Then
+        If (Guna2TextBox1.Text = "") Then
             MsgBox("الرجاء ادخل الاسم")
             Exit Sub
         End If
-        If (TextBox2.Text = "") Then
+        If (Guna2TextBox2.Text = "") Then
             MsgBox("الرجاء ادخل كلمة السر ")
             Exit Sub
         End If
-        If (ComboBox1.Text = "") Then
+        If (Guna2ComboBox1.Text = "") Then
             MsgBox("الرجاء اختيار نوع المستخدم")
             Exit Sub
         End If
-        functions.Runcommand("insert into Users(password,user_name,licenses)values('" & TextBox2.Text & "','" & TextBox1.Text & "','" & ComboBox1.Text & "')", "تمت العمليه بنجاح")
-        TextBox1.Clear()
-        TextBox2.Clear()
-        ComboBox1.Text = ""
+        functions.Runcommand("insert into Users(password,user_name,licenses)values('" & Guna2TextBox2.Text & "','" & Guna2TextBox1.Text & "','" & Guna2ComboBox1.Text & "')", "تمت العمليه بنجاح")
+        Guna2TextBox1.Clear()
+        Guna2TextBox2.Clear()
+        Guna2ComboBox1.Text = ""
     End Sub
 
 
-    Private Sub TextBox1_Leave(sender As Object, e As EventArgs) Handles TextBox1.Leave
+    Private Sub TextBox1_Leave(sender As Object, e As EventArgs)
 
         'عنده مايقوم المستخدم بختيار "المجهز" يبحث
         'عن الاسم هل موجود او لا ضمن قاعده البيانات
         Try
 
-            Dim user As String = functions.getOneValue("user_name", "Users", "user_name", TextBox1.Text, "string")
+            Dim user As String = functions.getOneValue("user_name", "Users", "user_name", Guna2TextBox1.Text, "string")
 
             If (user <> "") Then
                 MessageBox.Show("الاسم موجود سابقا يرجا ادخال اسم جديد", "خطأ الاسم", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                TextBox1.Focus()
+                Guna2TextBox1.Focus()
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -46,13 +46,13 @@
 
     End Sub
 
-    Private Sub TextBox2_GotFocus(sender As Object, e As EventArgs) Handles TextBox2.GotFocus
-        If (TextBox2.Text <> "") Then
+    Private Sub TextBox2_GotFocus(sender As Object, e As EventArgs)
+        If (Guna2TextBox2.Text <> "") Then
             PictureBox1.Visible = True
         End If
     End Sub
 
-    Private Sub TextBox2_LostFocus(sender As Object, e As EventArgs) Handles TextBox2.LostFocus
+    Private Sub TextBox2_LostFocus(sender As Object, e As EventArgs)
         PictureBox1.Visible = False
     End Sub
 
@@ -60,19 +60,21 @@
     'عند التأشير بالماوس
     Private Sub PictureBox1_MouseHover(sender As Object, e As EventArgs) Handles PictureBox1.MouseHover
         'اضهار الباسوورد
-        TextBox2.PasswordChar = ""
+        Guna2TextBox2.PasswordChar = ""
     End Sub
     'عندما يغادر المؤشر الباسوورد 
     Private Sub PictureBox1_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox1.MouseLeave
         'اخفاء الباسوورد
-        TextBox2.PasswordChar = "*"
+        Guna2TextBox2.PasswordChar = "*"
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-        If (TextBox2.Text <> "") Then
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox1.TextChanged
+        If (Guna2TextBox2.Text <> "") Then
             PictureBox1.Visible = True
         Else
             PictureBox1.Visible = False
         End If
     End Sub
+
+
 End Class

@@ -101,6 +101,7 @@ Partial Class Reports
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackgroundImage = Global.نظام_ادارة_المبيعات.My.Resources.Resources.photo_2023_02_03_23_01_33
         Me.ClientSize = New System.Drawing.Size(1142, 690)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Button5)

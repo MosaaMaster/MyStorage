@@ -1,27 +1,27 @@
 ﻿
 Public Class login
-    Private Sub TextBox1_Leave(sender As Object, e As EventArgs) Handles TextBox1.Leave
-        Dim User As String = functions.getOneValue("user_name", "Users", "user_name", TextBox1.Text, "string")
+    Private Sub Guna2TextBox1_Leave(sender As Object, e As EventArgs) Handles Guna2TextBox1.Leave
+        Dim User As String = functions.getOneValue("user_name", "Users", "user_name", Guna2TextBox1.Text, "string")
         If (User = "") Then
 
             MsgBox("المستخدم غير موجود")
-            TextBox1.Clear()
-            TextBox1.Focus()
+            Guna2TextBox1.Clear()
+            Guna2TextBox1.Focus()
             Exit Sub
         End If
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim User As String = functions.getOneValue("user_name", "Users", "user_name", TextBox1.Text, "string")
+        Dim User As String = functions.getOneValue("user_name", "Users", "user_name", Guna2TextBox1.Text, "string")
 
         Try
 
-            Dim pasw As String = functions.getOneValue("password", "Users", "user_name", TextBox1.Text, "string")
-            If (pasw <> TextBox2.Text) Then
+            Dim pasw As String = functions.getOneValue("password", "Users", "user_name", Guna2TextBox1.Text, "string")
+            If (pasw <> Guna2TextBox2.Text) Then
                 MessageBox.Show("كلمة السر خاطئة")
-                TextBox2.Focus()
+                Guna2TextBox2.Focus()
                 Exit Sub
             End If
-            Dim licenses As String = functions.getOneValue("licenses", "Users", "user_name", TextBox1.Text, "string")
+            Dim licenses As String = functions.getOneValue("licenses", "Users", "user_name", Guna2TextBox1.Text, "string")
             MsgBox("مرحباً :" & User,, "سجلت الدخول بصيغة " & licenses)
 
             If (licenses = "أدمن") Then
@@ -80,30 +80,28 @@ Public Class login
     'عند التأشير بالماوس
     Private Sub PictureBox1_MouseHover(sender As Object, e As EventArgs) Handles PictureBox1.MouseHover
         'اضهار الباسوورد
-        TextBox2.PasswordChar = ""
+        Guna2TextBox2.PasswordChar = ""
     End Sub
     'عندما يغادر المؤشر الباسوورد 
     Private Sub PictureBox1_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox1.MouseLeave
         'اخفاء الباسوورد
-        TextBox2.PasswordChar = "#"
+        Guna2TextBox2.PasswordChar = "#"
     End Sub
-    Private Sub TextBox2_GotFocus(sender As Object, e As EventArgs) Handles TextBox2.GotFocus
-        If (TextBox2.Text <> "") Then
+    Private Sub Guna2TextBox2_GotFocus(sender As Object, e As EventArgs) Handles Guna2TextBox2.GotFocus
+        If (Guna2TextBox2.Text <> "") Then
             PictureBox1.Visible = True
         End If
     End Sub
 
-    Private Sub TextBox2_LostFocus(sender As Object, e As EventArgs) Handles TextBox2.LostFocus
+    Private Sub Guna2TextBox2_LostFocus(sender As Object, e As EventArgs) Handles Guna2TextBox2.LostFocus
         PictureBox1.Visible = False
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-        If (TextBox2.Text <> "") Then
+    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox2.TextChanged
+        If (Guna2TextBox2.Text <> "") Then
             PictureBox1.Visible = True
         Else
             PictureBox1.Visible = False
         End If
     End Sub
-
-
 End Class

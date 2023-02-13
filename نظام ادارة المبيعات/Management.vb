@@ -1,8 +1,4 @@
 ﻿Public Class Management
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        materials_management.ShowDialog()
-    End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         people.ShowDialog()
     End Sub
@@ -15,7 +11,5 @@
         other_activities.ShowDialog()
     End Sub
 
-    Private Sub Management_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 End Class

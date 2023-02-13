@@ -3,15 +3,15 @@
 Public Class retail
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
 
-        functions.Runcommand("insert into sales(list_num,sale_type,name,date,payment_type,money_type,bill_cost,discount,note )values(" & TextBox30.Text & ",'" & "نقدي" & "','" & ComboBox11.Text & "','" & TextBox29.Text & "','" & ComboBox12.Text & "','" & ComboBox10.Text & "','" & TextBox26.Text & "'," & TextBox25.Text & ",'" & TextBox27.Text & "')", "add item")
+        functions.Runcommand("insert into sales(list_num,sale_type,name,date,payment_type,money_type,bill_cost,discount,note )values(" & Guna2TextBox30.Text & ",'" & "نقدي" & "','" & Guna2ComboBox11.Text & "','" & Guna2TextBox29.Text & "','" & Guna2ComboBox12.Text & "','" & Guna2ComboBox10.Text & "','" & Guna2TextBox26.Text & "'," & Guna2TextBox25.Text & ",'" & Guna2TextBox27.Text & "')", "add item")
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-        functions.Runcommand("insert into sales(list_num,sale_type,name,date,payment_type,money_type,bill_cost,discount,note )values(" & TextBox30.Text & ",'" & "توصيل" & "','" & ComboBox11.Text & "','" & TextBox29.Text & "','" & ComboBox12.Text & "','" & ComboBox10.Text & "','" & TextBox26.Text & "'," & TextBox25.Text & ",'" & TextBox27.Text & "')", "add item")
-        functions.Runcommand("insert into delivery(delivery_num,company_name,book_num)values(" & TextBox22.Text & ",'" & ComboBox9.Text & "'," & TextBox21.Text & ")", "add item")
+        functions.Runcommand("insert into sales(list_num,sale_type,name,date,payment_type,money_type,bill_cost,discount,note )values(" & Guna2TextBox30.Text & ",'" & "توصيل" & "','" & Guna2ComboBox11.Text & "','" & Guna2TextBox29.Text & "','" & Guna2ComboBox12.Text & "','" & Guna2ComboBox10.Text & "','" & Guna2TextBox26.Text & "'," & Guna2TextBox25.Text & ",'" & Guna2TextBox27.Text & "')", "add item")
+        functions.Runcommand("insert into delivery(delivery_num,company_name,book_num)values(" & Guna2TextBox22.Text & ",'" & Guna2ComboBox9.Text & "'," & Guna2TextBox21.Text & ")", "add item")
     End Sub
 
-    Private Sub ComboBox11_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox11.SelectedIndexChanged
+    Private Sub Guna2ComboBox11_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Guna2ComboBox11.SelectedIndexChanged
         ' functions.GetCoumnNames()
 
         'Dim r As SqlDataReader
@@ -24,15 +24,15 @@ Public Class retail
         '    While r.Read
         'TextBox28.Text = r.GetInt32("cu_id")
         ' TextBox2.Text = r.GetString("name")
-        TextBox28.Text = functions.getOneValue("cu_id", "customers", "name", ComboBox11.Text, "int")
+        Guna2TextBox28.Text = functions.getOneValue("cu_id", "customers", "name", Guna2ComboBox11.Text, "int")
         ' TextBox3.Text = r.GetDecimal("debt_t")
 
         ' ComboBox2.Text = r.GetString("statee")
         'extBox23.Text = r.GetString("address")
-        TextBox23.Text = functions.getOneValue("address", "customers", "name", ComboBox11.Text, "string")
+        Guna2TextBox23.Text = functions.getOneValue("address", "customers", "name", Guna2ComboBox11.Text, "string")
 
         ' TextBox24.Text = r.GetString("phone_num")
-        TextBox24.Text = functions.getOneValue("phone_num", "customers", "name", ComboBox11.Text, "string")
+        Guna2TextBox24.Text = functions.getOneValue("phone_num", "customers", "name", Guna2ComboBox11.Text, "string")
 
         ' TextBox7.Text = r.GetString("notes")
 
@@ -58,18 +58,18 @@ Public Class retail
     Private Sub tabControl1_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles TabControl1.SelectedIndexChanged
         If TabControl1.SelectedTab Is TabPage2 Then
             'MessageBox.Show("Tabpage2 is selected")
-            ComboBox11.DataSource = functions.GetCoumnNames("name", "customers")
-            ComboBox11.DisplayMember = "name"
-            TextBox30.Text = functions.GetAutoNumber1("Sales", "list_num")
+            Guna2ComboBox11.DataSource = functions.GetCoumnNames("name", "customers")
+            Guna2ComboBox11.DisplayMember = "name"
+            Guna2TextBox30.Text = functions.GetAutoNumber1("Sales", "list_num")
 
-            ComboBox11.Text = ""
-            TextBox23.Text = ""
-            TextBox24.Text = ""
-            TextBox28.Text = ""
+            Guna2ComboBox11.Text = ""
+            Guna2TextBox23.Text = ""
+            Guna2TextBox24.Text = ""
+            Guna2TextBox28.Text = ""
             ''''''
             '''
         ElseIf TabControl1.SelectedTab Is TabPage1 Then
-            TextBox20.Text = functions.GetAutoNumber1("Sales", "list_num")
+            Guna2TextBox20.Text = functions.GetAutoNumber1("Sales", "list_num")
         End If
     End Sub
 
@@ -99,7 +99,7 @@ Public Class retail
                 ' Add the values together
                 Dim sum As Double = value1 * value2
                 total_sum += sum
-                TextBox26.Text = total_sum
+                Guna2TextBox26.Text = total_sum
                 ' Set the value of the third column to the sum
                 DataGridView1.Rows(e.RowIndex).Cells(Column5.Index).Value = sum
             End If
@@ -126,7 +126,7 @@ Public Class retail
                     'التحقق من اذا كان السطر لا يحتوي بيانات
                     If Not DataGridView1.Rows(e.RowIndex).Cells(0).Value Is Nothing Then
                         ' Handle the case when the user did not select any value
-                        TextBox1.Text = functions.getOneValue("quantity", "materials", "model", DataGridView1.Rows(e.RowIndex).Cells(0).Value.ToString(), "int")
+                        Guna2TextBox1.Text = functions.getOneValue("quantity", "materials", "model", DataGridView1.Rows(e.RowIndex).Cells(0).Value.ToString(), "int")
                     End If
                 End If
             End If
@@ -158,5 +158,13 @@ Public Class retail
         End If
     End Sub
 
+
+
+    'لا حاجة لهذه الخطوة السبب انه صندوق النص التابع لمكتبة غونا يعرض بشكل افظل
+    'Private Sub Guna2TextBox27_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox27.TextChanged
+    '    If (Guna2TextBox27.Text.Length > 50) Then
+    '        Guna2TextBox27.Multiline = True
+    '    End If
+    'End Sub
 
 End Class

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class retail
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,65 @@ Partial Class retail
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Guna2TextBox16 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox15 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox17 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Guna2TextBox19 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox20 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Column2 = New System.Windows.Forms.DataGridViewComboBoxColumn()
@@ -36,21 +89,37 @@ Partial Class retail
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.TextBox19 = New System.Windows.Forms.TextBox()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.TextBox20 = New System.Windows.Forms.TextBox()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Guna2TextBox28 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox24 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox23 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2ComboBox11 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox26 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox25 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox27 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2ComboBox10 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Guna2ComboBox12 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Guna2TextBox29 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox30 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox21 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox22 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2ComboBox9 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.DataGridViewComboBoxColumn1 = New System.Windows.Forms.DataGridViewComboBoxColumn()
@@ -59,36 +128,9 @@ Partial Class retail
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Button11 = New System.Windows.Forms.Button()
-        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
-        Me.TextBox21 = New System.Windows.Forms.TextBox()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.TextBox22 = New System.Windows.Forms.TextBox()
-        Me.Label32 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
-        Me.TextBox23 = New System.Windows.Forms.TextBox()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.TextBox24 = New System.Windows.Forms.TextBox()
-        Me.Label35 = New System.Windows.Forms.Label()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
-        Me.TextBox25 = New System.Windows.Forms.TextBox()
-        Me.Label36 = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.TextBox26 = New System.Windows.Forms.TextBox()
-        Me.TextBox27 = New System.Windows.Forms.TextBox()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.ComboBox10 = New System.Windows.Forms.ComboBox()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.ComboBox11 = New System.Windows.Forms.ComboBox()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.TextBox28 = New System.Windows.Forms.TextBox()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.TextBox29 = New System.Windows.Forms.TextBox()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.ComboBox12 = New System.Windows.Forms.ComboBox()
-        Me.Label43 = New System.Windows.Forms.Label()
-        Me.TextBox30 = New System.Windows.Forms.TextBox()
-        Me.Label45 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,22 +157,22 @@ Partial Class retail
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.TabPage1.Controls.Add(Me.Guna2TextBox16)
+        Me.TabPage1.Controls.Add(Me.Guna2TextBox15)
+        Me.TabPage1.Controls.Add(Me.Guna2TextBox17)
+        Me.TabPage1.Controls.Add(Me.Guna2ComboBox1)
+        Me.TabPage1.Controls.Add(Me.Guna2TextBox19)
+        Me.TabPage1.Controls.Add(Me.Guna2TextBox20)
+        Me.TabPage1.Controls.Add(Me.Label6)
+        Me.TabPage1.Controls.Add(Me.Label5)
+        Me.TabPage1.Controls.Add(Me.Label4)
+        Me.TabPage1.Controls.Add(Me.Label3)
+        Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.PictureBox1)
         Me.TabPage1.Controls.Add(Me.DataGridView1)
         Me.TabPage1.Controls.Add(Me.Button6)
         Me.TabPage1.Controls.Add(Me.Button9)
         Me.TabPage1.Controls.Add(Me.Button10)
-        Me.TabPage1.Controls.Add(Me.TextBox15)
-        Me.TabPage1.Controls.Add(Me.Label21)
-        Me.TabPage1.Controls.Add(Me.Label22)
-        Me.TabPage1.Controls.Add(Me.TextBox16)
-        Me.TabPage1.Controls.Add(Me.TextBox17)
-        Me.TabPage1.Controls.Add(Me.Label23)
-        Me.TabPage1.Controls.Add(Me.ComboBox6)
-        Me.TabPage1.Controls.Add(Me.Label24)
-        Me.TabPage1.Controls.Add(Me.TextBox19)
-        Me.TabPage1.Controls.Add(Me.Label27)
-        Me.TabPage1.Controls.Add(Me.TextBox20)
         Me.TabPage1.Controls.Add(Me.Label30)
         Me.TabPage1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.TabPage1.Location = New System.Drawing.Point(4, 28)
@@ -140,6 +182,194 @@ Partial Class retail
         Me.TabPage1.Size = New System.Drawing.Size(1138, 656)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "مباشر"
+        '
+        'Guna2TextBox16
+        '
+        Me.Guna2TextBox16.BorderRadius = 5
+        Me.Guna2TextBox16.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox16.CustomizableEdges = CustomizableEdges1
+        Me.Guna2TextBox16.DefaultText = ""
+        Me.Guna2TextBox16.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox16.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox16.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox16.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox16.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox16.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox16.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox16.Location = New System.Drawing.Point(502, 473)
+        Me.Guna2TextBox16.Name = "Guna2TextBox16"
+        Me.Guna2TextBox16.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox16.PlaceholderText = ""
+        Me.Guna2TextBox16.SelectedText = ""
+        Me.Guna2TextBox16.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Me.Guna2TextBox16.Size = New System.Drawing.Size(191, 36)
+        Me.Guna2TextBox16.TabIndex = 112
+        '
+        'Guna2TextBox15
+        '
+        Me.Guna2TextBox15.BorderRadius = 5
+        Me.Guna2TextBox15.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox15.CustomizableEdges = CustomizableEdges3
+        Me.Guna2TextBox15.DefaultText = ""
+        Me.Guna2TextBox15.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox15.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox15.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox15.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox15.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox15.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox15.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox15.Location = New System.Drawing.Point(836, 473)
+        Me.Guna2TextBox15.Name = "Guna2TextBox15"
+        Me.Guna2TextBox15.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox15.PlaceholderText = ""
+        Me.Guna2TextBox15.SelectedText = ""
+        Me.Guna2TextBox15.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Me.Guna2TextBox15.Size = New System.Drawing.Size(191, 36)
+        Me.Guna2TextBox15.TabIndex = 111
+        '
+        'Guna2TextBox17
+        '
+        Me.Guna2TextBox17.BorderRadius = 5
+        Me.Guna2TextBox17.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox17.CustomizableEdges = CustomizableEdges5
+        Me.Guna2TextBox17.DefaultText = ""
+        Me.Guna2TextBox17.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox17.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox17.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox17.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox17.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox17.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox17.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox17.Location = New System.Drawing.Point(374, 97)
+        Me.Guna2TextBox17.Name = "Guna2TextBox17"
+        Me.Guna2TextBox17.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox17.PlaceholderText = ""
+        Me.Guna2TextBox17.SelectedText = ""
+        Me.Guna2TextBox17.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Me.Guna2TextBox17.Size = New System.Drawing.Size(634, 36)
+        Me.Guna2TextBox17.TabIndex = 110
+        '
+        'Guna2ComboBox1
+        '
+        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox1.CustomizableEdges = CustomizableEdges7
+        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Guna2ComboBox1.ItemHeight = 30
+        Me.Guna2ComboBox1.Items.AddRange(New Object() {"دولار", "دينار"})
+        Me.Guna2ComboBox1.Location = New System.Drawing.Point(374, 37)
+        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
+        Me.Guna2ComboBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        Me.Guna2ComboBox1.Size = New System.Drawing.Size(140, 36)
+        Me.Guna2ComboBox1.TabIndex = 109
+        '
+        'Guna2TextBox19
+        '
+        Me.Guna2TextBox19.BorderRadius = 5
+        Me.Guna2TextBox19.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox19.CustomizableEdges = CustomizableEdges9
+        Me.Guna2TextBox19.DefaultText = ""
+        Me.Guna2TextBox19.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox19.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox19.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox19.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox19.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox19.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox19.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox19.Location = New System.Drawing.Point(567, 37)
+        Me.Guna2TextBox19.Name = "Guna2TextBox19"
+        Me.Guna2TextBox19.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox19.PlaceholderText = ""
+        Me.Guna2TextBox19.SelectedText = ""
+        Me.Guna2TextBox19.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        Me.Guna2TextBox19.Size = New System.Drawing.Size(191, 36)
+        Me.Guna2TextBox19.TabIndex = 108
+        '
+        'Guna2TextBox20
+        '
+        Me.Guna2TextBox20.BorderRadius = 5
+        Me.Guna2TextBox20.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox20.CustomizableEdges = CustomizableEdges11
+        Me.Guna2TextBox20.DefaultText = ""
+        Me.Guna2TextBox20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox20.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox20.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox20.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox20.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox20.Location = New System.Drawing.Point(823, 37)
+        Me.Guna2TextBox20.Name = "Guna2TextBox20"
+        Me.Guna2TextBox20.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox20.PlaceholderText = ""
+        Me.Guna2TextBox20.SelectedText = ""
+        Me.Guna2TextBox20.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        Me.Guna2TextBox20.Size = New System.Drawing.Size(185, 36)
+        Me.Guna2TextBox20.TabIndex = 107
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label6.Location = New System.Drawing.Point(713, 473)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(88, 22)
+        Me.Label6.TabIndex = 106
+        Me.Label6.Text = "مبلغ الفاتورة"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.Location = New System.Drawing.Point(1034, 480)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(50, 22)
+        Me.Label5.TabIndex = 105
+        Me.Label5.Text = "الخصم"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(521, 41)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(45, 22)
+        Me.Label4.TabIndex = 104
+        Me.Label4.Text = "العملة"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(765, 37)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(51, 22)
+        Me.Label3.TabIndex = 103
+        Me.Label3.Text = "التاريخ"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(1023, 97)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(77, 22)
+        Me.Label2.TabIndex = 102
+        Me.Label2.Text = "الملاحضات"
         '
         'PictureBox1
         '
@@ -215,7 +445,8 @@ Partial Class retail
         '
         'Button6
         '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
+        Me.Button6.BackColor = System.Drawing.Color.Transparent
+        Me.Button6.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button6.Location = New System.Drawing.Point(990, 567)
         Me.Button6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button6.Name = "Button6"
@@ -226,7 +457,8 @@ Partial Class retail
         '
         'Button9
         '
-        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
+        Me.Button9.BackColor = System.Drawing.Color.Transparent
+        Me.Button9.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button9.Location = New System.Drawing.Point(874, 567)
         Me.Button9.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button9.Name = "Button9"
@@ -237,7 +469,10 @@ Partial Class retail
         '
         'Button10
         '
-        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
+        Me.Button10.BackColor = System.Drawing.Color.Transparent
+        Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button10.CausesValidation = False
+        Me.Button10.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button10.Location = New System.Drawing.Point(729, 567)
         Me.Button10.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button10.Name = "Button10"
@@ -246,166 +481,56 @@ Partial Class retail
         Me.Button10.Text = "الواجهة الرئيسية"
         Me.Button10.UseVisualStyleBackColor = False
         '
-        'TextBox15
-        '
-        Me.TextBox15.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox15.Location = New System.Drawing.Point(874, 476)
-        Me.TextBox15.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox15.TabIndex = 84
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label21.Location = New System.Drawing.Point(1040, 483)
-        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(48, 19)
-        Me.Label21.TabIndex = 83
-        Me.Label21.Text = "الخصم"
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label22.Location = New System.Drawing.Point(719, 476)
-        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(83, 19)
-        Me.Label22.TabIndex = 82
-        Me.Label22.Text = "مبلغ الفاتورة"
-        '
-        'TextBox16
-        '
-        Me.TextBox16.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox16.Location = New System.Drawing.Point(548, 469)
-        Me.TextBox16.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox16.TabIndex = 81
-        '
-        'TextBox17
-        '
-        Me.TextBox17.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox17.Location = New System.Drawing.Point(222, 107)
-        Me.TextBox17.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(774, 26)
-        Me.TextBox17.TabIndex = 79
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label23.Location = New System.Drawing.Point(1010, 114)
-        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(74, 19)
-        Me.Label23.TabIndex = 78
-        Me.Label23.Text = "الملاحضات"
-        '
-        'ComboBox6
-        '
-        Me.ComboBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Items.AddRange(New Object() {"دولار", "دينار"})
-        Me.ComboBox6.Location = New System.Drawing.Point(341, 37)
-        Me.ComboBox6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(172, 27)
-        Me.ComboBox6.TabIndex = 77
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label24.Location = New System.Drawing.Point(521, 40)
-        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(46, 19)
-        Me.Label24.TabIndex = 76
-        Me.Label24.Text = "العملة"
-        '
-        'TextBox19
-        '
-        Me.TextBox19.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox19.Location = New System.Drawing.Point(615, 37)
-        Me.TextBox19.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox19.TabIndex = 71
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label27.Location = New System.Drawing.Point(765, 40)
-        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(47, 19)
-        Me.Label27.TabIndex = 70
-        Me.Label27.Text = "التاريخ"
-        '
-        'TextBox20
-        '
-        Me.TextBox20.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox20.Location = New System.Drawing.Point(855, 37)
-        Me.TextBox20.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox20.TabIndex = 67
-        '
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label30.Location = New System.Drawing.Point(1009, 44)
+        Me.Label30.BackColor = System.Drawing.Color.Transparent
+        Me.Label30.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label30.Location = New System.Drawing.Point(1023, 41)
         Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(73, 19)
+        Me.Label30.Size = New System.Drawing.Size(75, 22)
         Me.Label30.TabIndex = 65
         Me.Label30.Text = "رقم القائمة"
         '
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.TabPage2.Controls.Add(Me.Label19)
+        Me.TabPage2.Controls.Add(Me.Label18)
+        Me.TabPage2.Controls.Add(Me.Label17)
         Me.TabPage2.Controls.Add(Me.Label1)
-        Me.TabPage2.Controls.Add(Me.TextBox1)
+        Me.TabPage2.Controls.Add(Me.Guna2TextBox28)
+        Me.TabPage2.Controls.Add(Me.Guna2TextBox24)
+        Me.TabPage2.Controls.Add(Me.Guna2TextBox23)
+        Me.TabPage2.Controls.Add(Me.Guna2ComboBox11)
+        Me.TabPage2.Controls.Add(Me.Label16)
+        Me.TabPage2.Controls.Add(Me.Label15)
+        Me.TabPage2.Controls.Add(Me.Label14)
+        Me.TabPage2.Controls.Add(Me.Guna2TextBox1)
+        Me.TabPage2.Controls.Add(Me.Guna2TextBox26)
+        Me.TabPage2.Controls.Add(Me.Guna2TextBox25)
+        Me.TabPage2.Controls.Add(Me.Guna2TextBox27)
+        Me.TabPage2.Controls.Add(Me.Guna2ComboBox10)
+        Me.TabPage2.Controls.Add(Me.Guna2ComboBox12)
+        Me.TabPage2.Controls.Add(Me.Guna2TextBox29)
+        Me.TabPage2.Controls.Add(Me.Guna2TextBox30)
+        Me.TabPage2.Controls.Add(Me.Guna2TextBox21)
+        Me.TabPage2.Controls.Add(Me.Guna2TextBox22)
+        Me.TabPage2.Controls.Add(Me.Guna2ComboBox9)
+        Me.TabPage2.Controls.Add(Me.Label13)
+        Me.TabPage2.Controls.Add(Me.Label12)
+        Me.TabPage2.Controls.Add(Me.Label11)
+        Me.TabPage2.Controls.Add(Me.Label10)
+        Me.TabPage2.Controls.Add(Me.Label9)
+        Me.TabPage2.Controls.Add(Me.Label8)
+        Me.TabPage2.Controls.Add(Me.Label7)
         Me.TabPage2.Controls.Add(Me.PictureBox2)
         Me.TabPage2.Controls.Add(Me.DataGridView2)
         Me.TabPage2.Controls.Add(Me.Button11)
-        Me.TabPage2.Controls.Add(Me.ComboBox9)
-        Me.TabPage2.Controls.Add(Me.TextBox21)
-        Me.TabPage2.Controls.Add(Me.Label31)
-        Me.TabPage2.Controls.Add(Me.TextBox22)
-        Me.TabPage2.Controls.Add(Me.Label32)
         Me.TabPage2.Controls.Add(Me.Label33)
-        Me.TabPage2.Controls.Add(Me.TextBox23)
-        Me.TabPage2.Controls.Add(Me.Label34)
-        Me.TabPage2.Controls.Add(Me.TextBox24)
-        Me.TabPage2.Controls.Add(Me.Label35)
         Me.TabPage2.Controls.Add(Me.Button14)
         Me.TabPage2.Controls.Add(Me.Button15)
-        Me.TabPage2.Controls.Add(Me.TextBox25)
-        Me.TabPage2.Controls.Add(Me.Label36)
-        Me.TabPage2.Controls.Add(Me.Label37)
-        Me.TabPage2.Controls.Add(Me.TextBox26)
-        Me.TabPage2.Controls.Add(Me.TextBox27)
-        Me.TabPage2.Controls.Add(Me.Label38)
-        Me.TabPage2.Controls.Add(Me.ComboBox10)
-        Me.TabPage2.Controls.Add(Me.Label39)
-        Me.TabPage2.Controls.Add(Me.ComboBox11)
-        Me.TabPage2.Controls.Add(Me.Label40)
-        Me.TabPage2.Controls.Add(Me.TextBox28)
-        Me.TabPage2.Controls.Add(Me.Label41)
-        Me.TabPage2.Controls.Add(Me.TextBox29)
-        Me.TabPage2.Controls.Add(Me.Label42)
-        Me.TabPage2.Controls.Add(Me.ComboBox12)
-        Me.TabPage2.Controls.Add(Me.Label43)
-        Me.TabPage2.Controls.Add(Me.TextBox30)
-        Me.TabPage2.Controls.Add(Me.Label45)
         Me.TabPage2.Location = New System.Drawing.Point(4, 28)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TabPage2.Name = "TabPage2"
@@ -414,21 +539,490 @@ Partial Class retail
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "توصيل"
         '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
+        Me.Label19.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label19.Location = New System.Drawing.Point(194, 58)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(97, 22)
+        Me.Label19.TabIndex = 132
+        Me.Label19.Text = "تسلسل الزبون"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
+        Me.Label18.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label18.Location = New System.Drawing.Point(452, 214)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(76, 22)
+        Me.Label18.TabIndex = 131
+        Me.Label18.Text = "رقم الهاتف"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label17.Location = New System.Drawing.Point(460, 174)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(53, 22)
+        Me.Label17.TabIndex = 130
+        Me.Label17.Text = "العنوان"
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(436, 523)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(452, 111)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(79, 19)
-        Me.Label1.TabIndex = 103
-        Me.Label1.Text = "رصيد المادة"
+        Me.Label1.Size = New System.Drawing.Size(78, 22)
+        Me.Label1.TabIndex = 129
+        Me.Label1.Text = "اسم الزبون"
         '
-        'TextBox1
+        'Guna2TextBox28
         '
-        Me.TextBox1.Location = New System.Drawing.Point(292, 520)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(119, 26)
-        Me.TextBox1.TabIndex = 102
+        Me.Guna2TextBox28.BorderRadius = 5
+        Me.Guna2TextBox28.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox28.CustomizableEdges = CustomizableEdges13
+        Me.Guna2TextBox28.DefaultText = ""
+        Me.Guna2TextBox28.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox28.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox28.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox28.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox28.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox28.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox28.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox28.Location = New System.Drawing.Point(45, 48)
+        Me.Guna2TextBox28.Name = "Guna2TextBox28"
+        Me.Guna2TextBox28.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox28.PlaceholderText = ""
+        Me.Guna2TextBox28.SelectedText = ""
+        Me.Guna2TextBox28.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        Me.Guna2TextBox28.Size = New System.Drawing.Size(142, 36)
+        Me.Guna2TextBox28.TabIndex = 128
+        '
+        'Guna2TextBox24
+        '
+        Me.Guna2TextBox24.BorderRadius = 5
+        Me.Guna2TextBox24.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox24.CustomizableEdges = CustomizableEdges15
+        Me.Guna2TextBox24.DefaultText = ""
+        Me.Guna2TextBox24.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox24.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox24.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox24.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox24.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox24.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox24.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox24.Location = New System.Drawing.Point(298, 214)
+        Me.Guna2TextBox24.Name = "Guna2TextBox24"
+        Me.Guna2TextBox24.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox24.PlaceholderText = ""
+        Me.Guna2TextBox24.SelectedText = ""
+        Me.Guna2TextBox24.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        Me.Guna2TextBox24.Size = New System.Drawing.Size(142, 36)
+        Me.Guna2TextBox24.TabIndex = 127
+        '
+        'Guna2TextBox23
+        '
+        Me.Guna2TextBox23.BorderRadius = 5
+        Me.Guna2TextBox23.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox23.CustomizableEdges = CustomizableEdges17
+        Me.Guna2TextBox23.DefaultText = ""
+        Me.Guna2TextBox23.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox23.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox23.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox23.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox23.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox23.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox23.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox23.Location = New System.Drawing.Point(298, 163)
+        Me.Guna2TextBox23.Name = "Guna2TextBox23"
+        Me.Guna2TextBox23.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox23.PlaceholderText = ""
+        Me.Guna2TextBox23.SelectedText = ""
+        Me.Guna2TextBox23.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        Me.Guna2TextBox23.Size = New System.Drawing.Size(142, 36)
+        Me.Guna2TextBox23.TabIndex = 126
+        '
+        'Guna2ComboBox11
+        '
+        Me.Guna2ComboBox11.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox11.BorderRadius = 5
+        Me.Guna2ComboBox11.CustomizableEdges = CustomizableEdges19
+        Me.Guna2ComboBox11.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox11.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox11.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2ComboBox11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Guna2ComboBox11.ItemHeight = 30
+        Me.Guna2ComboBox11.Items.AddRange(New Object() {"دولار", "دينار"})
+        Me.Guna2ComboBox11.Location = New System.Drawing.Point(298, 101)
+        Me.Guna2ComboBox11.Name = "Guna2ComboBox11"
+        Me.Guna2ComboBox11.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        Me.Guna2ComboBox11.Size = New System.Drawing.Size(142, 36)
+        Me.Guna2ComboBox11.TabIndex = 125
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label16.Location = New System.Drawing.Point(538, 517)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(84, 22)
+        Me.Label16.TabIndex = 124
+        Me.Label16.Text = "رصيد المادة"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
+        Me.Label15.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label15.Location = New System.Drawing.Point(778, 517)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(88, 22)
+        Me.Label15.TabIndex = 123
+        Me.Label15.Text = "مبلغ الفاتورة"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label14.Location = New System.Drawing.Point(1028, 517)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(50, 22)
+        Me.Label14.TabIndex = 122
+        Me.Label14.Text = "الخصم"
+        '
+        'Guna2TextBox1
+        '
+        Me.Guna2TextBox1.BorderRadius = 5
+        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox1.CustomizableEdges = CustomizableEdges21
+        Me.Guna2TextBox1.DefaultText = ""
+        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(418, 506)
+        Me.Guna2TextBox1.Name = "Guna2TextBox1"
+        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox1.PlaceholderText = ""
+        Me.Guna2TextBox1.SelectedText = ""
+        Me.Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(113, 36)
+        Me.Guna2TextBox1.TabIndex = 121
+        '
+        'Guna2TextBox26
+        '
+        Me.Guna2TextBox26.BorderRadius = 5
+        Me.Guna2TextBox26.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox26.CustomizableEdges = CustomizableEdges23
+        Me.Guna2TextBox26.DefaultText = ""
+        Me.Guna2TextBox26.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox26.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox26.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox26.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox26.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox26.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox26.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox26.Location = New System.Drawing.Point(629, 506)
+        Me.Guna2TextBox26.Name = "Guna2TextBox26"
+        Me.Guna2TextBox26.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox26.PlaceholderText = ""
+        Me.Guna2TextBox26.SelectedText = ""
+        Me.Guna2TextBox26.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        Me.Guna2TextBox26.Size = New System.Drawing.Size(142, 36)
+        Me.Guna2TextBox26.TabIndex = 120
+        '
+        'Guna2TextBox25
+        '
+        Me.Guna2TextBox25.BorderRadius = 5
+        Me.Guna2TextBox25.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox25.CustomizableEdges = CustomizableEdges25
+        Me.Guna2TextBox25.DefaultText = ""
+        Me.Guna2TextBox25.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox25.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox25.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox25.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox25.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox25.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox25.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox25.Location = New System.Drawing.Point(879, 506)
+        Me.Guna2TextBox25.Name = "Guna2TextBox25"
+        Me.Guna2TextBox25.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox25.PlaceholderText = ""
+        Me.Guna2TextBox25.SelectedText = ""
+        Me.Guna2TextBox25.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        Me.Guna2TextBox25.Size = New System.Drawing.Size(142, 36)
+        Me.Guna2TextBox25.TabIndex = 119
+        '
+        'Guna2TextBox27
+        '
+        Me.Guna2TextBox27.BorderRadius = 5
+        Me.Guna2TextBox27.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox27.CustomizableEdges = CustomizableEdges27
+        Me.Guna2TextBox27.DefaultText = ""
+        Me.Guna2TextBox27.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox27.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox27.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox27.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox27.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox27.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox27.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox27.Location = New System.Drawing.Point(538, 214)
+        Me.Guna2TextBox27.Name = "Guna2TextBox27"
+        Me.Guna2TextBox27.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox27.PlaceholderText = ""
+        Me.Guna2TextBox27.SelectedText = ""
+        Me.Guna2TextBox27.ShadowDecoration.CustomizableEdges = CustomizableEdges28
+        Me.Guna2TextBox27.Size = New System.Drawing.Size(449, 36)
+        Me.Guna2TextBox27.TabIndex = 118
+        '
+        'Guna2ComboBox10
+        '
+        Me.Guna2ComboBox10.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox10.BorderRadius = 5
+        Me.Guna2ComboBox10.CustomizableEdges = CustomizableEdges29
+        Me.Guna2ComboBox10.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox10.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox10.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox10.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2ComboBox10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Guna2ComboBox10.ItemHeight = 30
+        Me.Guna2ComboBox10.Items.AddRange(New Object() {"دولار", "دينار"})
+        Me.Guna2ComboBox10.Location = New System.Drawing.Point(538, 163)
+        Me.Guna2ComboBox10.Name = "Guna2ComboBox10"
+        Me.Guna2ComboBox10.ShadowDecoration.CustomizableEdges = CustomizableEdges30
+        Me.Guna2ComboBox10.Size = New System.Drawing.Size(142, 36)
+        Me.Guna2ComboBox10.TabIndex = 117
+        '
+        'Guna2ComboBox12
+        '
+        Me.Guna2ComboBox12.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox12.BorderRadius = 5
+        Me.Guna2ComboBox12.CustomizableEdges = CustomizableEdges31
+        Me.Guna2ComboBox12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox12.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox12.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox12.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2ComboBox12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Guna2ComboBox12.ItemHeight = 30
+        Me.Guna2ComboBox12.Items.AddRange(New Object() {"اجل", "نقدي"})
+        Me.Guna2ComboBox12.Location = New System.Drawing.Point(820, 160)
+        Me.Guna2ComboBox12.Name = "Guna2ComboBox12"
+        Me.Guna2ComboBox12.ShadowDecoration.CustomizableEdges = CustomizableEdges32
+        Me.Guna2ComboBox12.Size = New System.Drawing.Size(167, 36)
+        Me.Guna2ComboBox12.TabIndex = 116
+        '
+        'Guna2TextBox29
+        '
+        Me.Guna2TextBox29.BorderRadius = 5
+        Me.Guna2TextBox29.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox29.CustomizableEdges = CustomizableEdges33
+        Me.Guna2TextBox29.DefaultText = ""
+        Me.Guna2TextBox29.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox29.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox29.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox29.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox29.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox29.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox29.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox29.Location = New System.Drawing.Point(538, 104)
+        Me.Guna2TextBox29.Name = "Guna2TextBox29"
+        Me.Guna2TextBox29.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox29.PlaceholderText = ""
+        Me.Guna2TextBox29.SelectedText = ""
+        Me.Guna2TextBox29.ShadowDecoration.CustomizableEdges = CustomizableEdges34
+        Me.Guna2TextBox29.Size = New System.Drawing.Size(142, 36)
+        Me.Guna2TextBox29.TabIndex = 115
+        '
+        'Guna2TextBox30
+        '
+        Me.Guna2TextBox30.BorderRadius = 5
+        Me.Guna2TextBox30.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox30.CustomizableEdges = CustomizableEdges35
+        Me.Guna2TextBox30.DefaultText = ""
+        Me.Guna2TextBox30.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox30.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox30.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox30.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox30.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox30.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox30.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox30.Location = New System.Drawing.Point(820, 104)
+        Me.Guna2TextBox30.Name = "Guna2TextBox30"
+        Me.Guna2TextBox30.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox30.PlaceholderText = ""
+        Me.Guna2TextBox30.SelectedText = ""
+        Me.Guna2TextBox30.ShadowDecoration.CustomizableEdges = CustomizableEdges36
+        Me.Guna2TextBox30.Size = New System.Drawing.Size(167, 36)
+        Me.Guna2TextBox30.TabIndex = 114
+        '
+        'Guna2TextBox21
+        '
+        Me.Guna2TextBox21.BorderRadius = 5
+        Me.Guna2TextBox21.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox21.CustomizableEdges = CustomizableEdges37
+        Me.Guna2TextBox21.DefaultText = ""
+        Me.Guna2TextBox21.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox21.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox21.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox21.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox21.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox21.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox21.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox21.Location = New System.Drawing.Point(298, 48)
+        Me.Guna2TextBox21.Name = "Guna2TextBox21"
+        Me.Guna2TextBox21.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox21.PlaceholderText = ""
+        Me.Guna2TextBox21.SelectedText = ""
+        Me.Guna2TextBox21.ShadowDecoration.CustomizableEdges = CustomizableEdges38
+        Me.Guna2TextBox21.Size = New System.Drawing.Size(142, 36)
+        Me.Guna2TextBox21.TabIndex = 113
+        '
+        'Guna2TextBox22
+        '
+        Me.Guna2TextBox22.BorderRadius = 5
+        Me.Guna2TextBox22.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox22.CustomizableEdges = CustomizableEdges39
+        Me.Guna2TextBox22.DefaultText = ""
+        Me.Guna2TextBox22.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox22.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox22.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox22.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox22.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox22.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox22.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox22.Location = New System.Drawing.Point(538, 48)
+        Me.Guna2TextBox22.Name = "Guna2TextBox22"
+        Me.Guna2TextBox22.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox22.PlaceholderText = ""
+        Me.Guna2TextBox22.SelectedText = ""
+        Me.Guna2TextBox22.ShadowDecoration.CustomizableEdges = CustomizableEdges40
+        Me.Guna2TextBox22.Size = New System.Drawing.Size(142, 36)
+        Me.Guna2TextBox22.TabIndex = 112
+        '
+        'Guna2ComboBox9
+        '
+        Me.Guna2ComboBox9.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox9.BorderRadius = 5
+        Me.Guna2ComboBox9.CustomizableEdges = CustomizableEdges41
+        Me.Guna2ComboBox9.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox9.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox9.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2ComboBox9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Guna2ComboBox9.ItemHeight = 30
+        Me.Guna2ComboBox9.Location = New System.Drawing.Point(820, 48)
+        Me.Guna2ComboBox9.Name = "Guna2ComboBox9"
+        Me.Guna2ComboBox9.ShadowDecoration.CustomizableEdges = CustomizableEdges42
+        Me.Guna2ComboBox9.Size = New System.Drawing.Size(167, 36)
+        Me.Guna2ComboBox9.TabIndex = 111
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.Location = New System.Drawing.Point(460, 59)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(70, 22)
+        Me.Label13.TabIndex = 110
+        Me.Label13.Text = "رقم الدفتر"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
+        Me.Label12.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label12.Location = New System.Drawing.Point(683, 58)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(124, 22)
+        Me.Label12.TabIndex = 109
+        Me.Label12.Text = "رقم طلبية التوصيل"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label11.Location = New System.Drawing.Point(720, 177)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(45, 22)
+        Me.Label11.TabIndex = 108
+        Me.Label11.Text = "العملة"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label10.Location = New System.Drawing.Point(720, 115)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(51, 22)
+        Me.Label10.TabIndex = 107
+        Me.Label10.Text = "التاريخ"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label9.Location = New System.Drawing.Point(1001, 228)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(77, 22)
+        Me.Label9.TabIndex = 106
+        Me.Label9.Text = "الملاحضات"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.Location = New System.Drawing.Point(1001, 177)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(69, 22)
+        Me.Label8.TabIndex = 105
+        Me.Label8.Text = "نوع الدفع"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label7.Location = New System.Drawing.Point(1001, 111)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(75, 22)
+        Me.Label7.TabIndex = 104
+        Me.Label7.Text = "رقم القائمة"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'PictureBox2
         '
@@ -451,7 +1045,7 @@ Partial Class retail
         Me.DataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -505,6 +1099,7 @@ Partial Class retail
         'Button11
         '
         Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
+        Me.Button11.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button11.Location = New System.Drawing.Point(1001, 590)
         Me.Button11.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button11.Name = "Button11"
@@ -513,110 +1108,22 @@ Partial Class retail
         Me.Button11.Text = "خزن"
         Me.Button11.UseVisualStyleBackColor = False
         '
-        'ComboBox9
-        '
-        Me.ComboBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Location = New System.Drawing.Point(815, 54)
-        Me.ComboBox9.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.ComboBox9.Name = "ComboBox9"
-        Me.ComboBox9.Size = New System.Drawing.Size(172, 27)
-        Me.ComboBox9.TabIndex = 98
-        '
-        'TextBox21
-        '
-        Me.TextBox21.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox21.Location = New System.Drawing.Point(373, 54)
-        Me.TextBox21.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox21.TabIndex = 97
-        '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label31.Location = New System.Drawing.Point(400, 22)
-        Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(67, 19)
-        Me.Label31.TabIndex = 96
-        Me.Label31.Text = "رقم الدفتر"
-        '
-        'TextBox22
-        '
-        Me.TextBox22.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox22.Location = New System.Drawing.Point(568, 55)
-        Me.TextBox22.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox22.TabIndex = 95
-        '
-        'Label32
-        '
-        Me.Label32.AutoSize = True
-        Me.Label32.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label32.Location = New System.Drawing.Point(565, 22)
-        Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(120, 19)
-        Me.Label32.TabIndex = 94
-        Me.Label32.Text = "رقم طلبية التوصيل"
-        '
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label33.Location = New System.Drawing.Point(828, 22)
+        Me.Label33.BackColor = System.Drawing.Color.Transparent
+        Me.Label33.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label33.Location = New System.Drawing.Point(1001, 51)
         Me.Label33.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(120, 19)
+        Me.Label33.Size = New System.Drawing.Size(129, 22)
         Me.Label33.TabIndex = 93
         Me.Label33.Text = "اسم شركة التوصيل"
-        '
-        'TextBox23
-        '
-        Me.TextBox23.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox23.Location = New System.Drawing.Point(19, 127)
-        Me.TextBox23.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox23.Name = "TextBox23"
-        Me.TextBox23.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox23.TabIndex = 92
-        '
-        'Label34
-        '
-        Me.Label34.AutoSize = True
-        Me.Label34.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label34.Location = New System.Drawing.Point(60, 94)
-        Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(51, 19)
-        Me.Label34.TabIndex = 91
-        Me.Label34.Text = "العنوان"
-        '
-        'TextBox24
-        '
-        Me.TextBox24.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox24.Location = New System.Drawing.Point(19, 213)
-        Me.TextBox24.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox24.Name = "TextBox24"
-        Me.TextBox24.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox24.TabIndex = 90
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = True
-        Me.Label35.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label35.Location = New System.Drawing.Point(50, 177)
-        Me.Label35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(72, 19)
-        Me.Label35.TabIndex = 89
-        Me.Label35.Text = "رقم الهاتف"
         '
         'Button14
         '
         Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
+        Me.Button14.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button14.Location = New System.Drawing.Point(885, 590)
         Me.Button14.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button14.Name = "Button14"
@@ -628,6 +1135,7 @@ Partial Class retail
         'Button15
         '
         Me.Button15.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
+        Me.Button15.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button15.Location = New System.Drawing.Point(740, 590)
         Me.Button15.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button15.Name = "Button15"
@@ -635,191 +1143,6 @@ Partial Class retail
         Me.Button15.TabIndex = 85
         Me.Button15.Text = "الواجهة الرئيسية"
         Me.Button15.UseVisualStyleBackColor = False
-        '
-        'TextBox25
-        '
-        Me.TextBox25.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox25.Location = New System.Drawing.Point(845, 520)
-        Me.TextBox25.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox25.Name = "TextBox25"
-        Me.TextBox25.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox25.TabIndex = 84
-        '
-        'Label36
-        '
-        Me.Label36.AutoSize = True
-        Me.Label36.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label36.Location = New System.Drawing.Point(1012, 520)
-        Me.Label36.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(48, 19)
-        Me.Label36.TabIndex = 83
-        Me.Label36.Text = "الخصم"
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label37.Location = New System.Drawing.Point(704, 520)
-        Me.Label37.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(83, 19)
-        Me.Label37.TabIndex = 82
-        Me.Label37.Text = "مبلغ الفاتورة"
-        '
-        'TextBox26
-        '
-        Me.TextBox26.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox26.Location = New System.Drawing.Point(538, 520)
-        Me.TextBox26.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox26.Name = "TextBox26"
-        Me.TextBox26.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox26.TabIndex = 81
-        '
-        'TextBox27
-        '
-        Me.TextBox27.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox27.Location = New System.Drawing.Point(529, 228)
-        Me.TextBox27.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox27.Name = "TextBox27"
-        Me.TextBox27.Size = New System.Drawing.Size(433, 26)
-        Me.TextBox27.TabIndex = 79
-        '
-        'Label38
-        '
-        Me.Label38.AutoSize = True
-        Me.Label38.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label38.Location = New System.Drawing.Point(982, 228)
-        Me.Label38.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(74, 19)
-        Me.Label38.TabIndex = 78
-        Me.Label38.Text = "الملاحضات"
-        '
-        'ComboBox10
-        '
-        Me.ComboBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.ComboBox10.FormattingEnabled = True
-        Me.ComboBox10.Items.AddRange(New Object() {"دولار", "دينار"})
-        Me.ComboBox10.Location = New System.Drawing.Point(538, 169)
-        Me.ComboBox10.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.ComboBox10.Name = "ComboBox10"
-        Me.ComboBox10.Size = New System.Drawing.Size(172, 27)
-        Me.ComboBox10.TabIndex = 77
-        '
-        'Label39
-        '
-        Me.Label39.AutoSize = True
-        Me.Label39.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label39.Location = New System.Drawing.Point(720, 174)
-        Me.Label39.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(46, 19)
-        Me.Label39.TabIndex = 76
-        Me.Label39.Text = "العملة"
-        '
-        'ComboBox11
-        '
-        Me.ComboBox11.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.ComboBox11.FormattingEnabled = True
-        Me.ComboBox11.Location = New System.Drawing.Point(10, 43)
-        Me.ComboBox11.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.ComboBox11.Name = "ComboBox11"
-        Me.ComboBox11.Size = New System.Drawing.Size(172, 27)
-        Me.ComboBox11.TabIndex = 75
-        '
-        'Label40
-        '
-        Me.Label40.AutoSize = True
-        Me.Label40.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label40.Location = New System.Drawing.Point(56, 11)
-        Me.Label40.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(73, 19)
-        Me.Label40.TabIndex = 74
-        Me.Label40.Text = "اسم الزبون"
-        '
-        'TextBox28
-        '
-        Me.TextBox28.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox28.Location = New System.Drawing.Point(19, 300)
-        Me.TextBox28.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox28.Name = "TextBox28"
-        Me.TextBox28.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox28.TabIndex = 73
-        '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label41.Location = New System.Drawing.Point(37, 263)
-        Me.Label41.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(92, 19)
-        Me.Label41.TabIndex = 72
-        Me.Label41.Text = "تسلسل الزبون"
-        '
-        'TextBox29
-        '
-        Me.TextBox29.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox29.Location = New System.Drawing.Point(568, 111)
-        Me.TextBox29.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox29.Name = "TextBox29"
-        Me.TextBox29.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox29.TabIndex = 71
-        '
-        'Label42
-        '
-        Me.Label42.AutoSize = True
-        Me.Label42.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label42.Location = New System.Drawing.Point(720, 114)
-        Me.Label42.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(47, 19)
-        Me.Label42.TabIndex = 70
-        Me.Label42.Text = "التاريخ"
-        '
-        'ComboBox12
-        '
-        Me.ComboBox12.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.ComboBox12.FormattingEnabled = True
-        Me.ComboBox12.Items.AddRange(New Object() {"اجل", "نقدي"})
-        Me.ComboBox12.Location = New System.Drawing.Point(790, 172)
-        Me.ComboBox12.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.ComboBox12.Name = "ComboBox12"
-        Me.ComboBox12.Size = New System.Drawing.Size(172, 27)
-        Me.ComboBox12.TabIndex = 69
-        '
-        'Label43
-        '
-        Me.Label43.AutoSize = True
-        Me.Label43.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label43.Location = New System.Drawing.Point(991, 175)
-        Me.Label43.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(64, 19)
-        Me.Label43.TabIndex = 68
-        Me.Label43.Text = "نوع الدفع"
-        '
-        'TextBox30
-        '
-        Me.TextBox30.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.TextBox30.Location = New System.Drawing.Point(820, 109)
-        Me.TextBox30.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox30.Name = "TextBox30"
-        Me.TextBox30.Size = New System.Drawing.Size(142, 26)
-        Me.TextBox30.TabIndex = 67
-        '
-        'Label45
-        '
-        Me.Label45.AutoSize = True
-        Me.Label45.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
-        Me.Label45.Location = New System.Drawing.Point(981, 116)
-        Me.Label45.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(73, 19)
-        Me.Label45.TabIndex = 65
-        Me.Label45.Text = "رقم القائمة"
         '
         'retail
         '
@@ -850,50 +1173,12 @@ Partial Class retail
     Friend WithEvents Button6 As Button
     Friend WithEvents Button9 As Button
     Friend WithEvents Button10 As Button
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label22 As Label
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents Label23 As Label
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents Label24 As Label
-    Friend WithEvents TextBox19 As TextBox
-    Friend WithEvents Label27 As Label
-    Friend WithEvents TextBox20 As TextBox
     Friend WithEvents Label30 As Label
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Button11 As Button
-    Friend WithEvents ComboBox9 As ComboBox
-    Friend WithEvents TextBox21 As TextBox
-    Friend WithEvents Label31 As Label
-    Friend WithEvents TextBox22 As TextBox
-    Friend WithEvents Label32 As Label
     Friend WithEvents Label33 As Label
-    Friend WithEvents TextBox23 As TextBox
-    Friend WithEvents Label34 As Label
-    Friend WithEvents TextBox24 As TextBox
-    Friend WithEvents Label35 As Label
     Friend WithEvents Button14 As Button
     Friend WithEvents Button15 As Button
-    Friend WithEvents TextBox25 As TextBox
-    Friend WithEvents Label36 As Label
-    Friend WithEvents Label37 As Label
-    Friend WithEvents TextBox26 As TextBox
-    Friend WithEvents TextBox27 As TextBox
-    Friend WithEvents Label38 As Label
-    Friend WithEvents ComboBox10 As ComboBox
-    Friend WithEvents Label39 As Label
-    Friend WithEvents ComboBox11 As ComboBox
-    Friend WithEvents Label40 As Label
-    Friend WithEvents TextBox28 As TextBox
-    Friend WithEvents Label41 As Label
-    Friend WithEvents TextBox29 As TextBox
-    Friend WithEvents Label42 As Label
-    Friend WithEvents ComboBox12 As ComboBox
-    Friend WithEvents Label43 As Label
-    Friend WithEvents TextBox30 As TextBox
-    Friend WithEvents Label45 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Column2 As DataGridViewComboBoxColumn
@@ -908,6 +1193,44 @@ Partial Class retail
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Guna2TextBox20 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox19 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Guna2TextBox17 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox16 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox15 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2ComboBox9 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Guna2TextBox22 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox21 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox30 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox29 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2ComboBox12 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Guna2ComboBox10 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Guna2TextBox27 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox26 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox25 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2ComboBox11 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Guna2TextBox28 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox24 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox23 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label17 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
 End Class

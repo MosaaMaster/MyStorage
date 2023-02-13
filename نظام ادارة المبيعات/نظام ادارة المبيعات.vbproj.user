@@ -10,9 +10,6 @@
     <Compile Update="Management.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="materials management.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="MoneyBox.vb">
       <SubType>Form</SubType>
     </Compile>

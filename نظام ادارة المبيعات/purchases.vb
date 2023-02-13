@@ -4,14 +4,16 @@ Class purchases
 
     Dim pictureinfo() As String = {""}
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Label10.Visible = True
-        TextBox5.Visible = True
+        Label12.Visible = True
+        Guna2ComboBox6.Visible = True
+        Guna2ComboBox6.DataSource = functions.GetCoumnNames("list_num", "purchases")
+        Guna2ComboBox6.DisplayMember = "list_num"
 
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        functions.Runcommand("insert into purchases(list_num,date,list_type,name,payment_type,material_type,country_source,notes,total_price)values(" & Guna2TextBox2.Text & ",'" & Guna2TextBox1.Text & "','" & ComboBox1.Text & "','" & ComboBox2.Text & "','" & ComboBox3.Text & "','" & ComboBox4.Text & "','" & ComboBox5.Text & "' , '" & TextBox3.Text & "' , '" & TextBox4.Text & "')", "add elemant....")
+        functions.Runcommand("insert into purchases(list_num,date,list_type,name,payment_type,material_type,country_source,notes,total_price)values(" & Guna2TextBox2.Text & ",'" & Guna2TextBox1.Text & "','" & Guna2ComboBox1.Text & "','" & Guna2ComboBox2.Text & "','" & Guna2ComboBox3.Text & "','" & Guna2ComboBox4.Text & "','" & Guna2ComboBox5.Text & "' , '" & Guna2TextBox3.Text & "' , '" & Guna2TextBox4.Text & "')", "add elemant....")
         For i As Integer = 0 To Guna2DataGridView1.Rows.Count - 2
 
             'Dim bmp As Bitmap = DataGridView1.Rows(i).Cells(4).Value
@@ -20,7 +22,7 @@ Class purchases
             'img.Save(ms, Image.Jpeg)
             'Dim data As Byte() = ms.ToArray()
             functions.Runcommand("insert into purchases_items(model_code,quantity,price,total_price,ico,list_num) values ('" & Guna2DataGridView1.Rows(i).Cells(0).Value & "' ,' " & Guna2DataGridView1.Rows(i).Cells(1).Value & " ',' " & Guna2DataGridView1.Rows(i).Cells(2).Value & " ', ' " & Guna2DataGridView1.Rows(i).Cells(3).Value & " ' ,  '" & pictureinfo(i) & " '  , " & Guna2TextBox2.Text & " )", "add elemant....")
-            functions.Runcommand("insert into materials(model,quantity,price,image,type) values('" & Guna2DataGridView1.Rows(i).Cells(0).Value & "', ' " & Guna2DataGridView1.Rows(i).Cells(1).Value & " ' , ' " & Guna2DataGridView1.Rows(i).Cells(2).Value & " ' , '" & pictureinfo(i) & " ' , ' " & ComboBox4.Text & " ' )", "add elemant....")
+            functions.Runcommand("insert into materials(model,quantity,price,image,type) values('" & Guna2DataGridView1.Rows(i).Cells(0).Value & "', ' " & Guna2DataGridView1.Rows(i).Cells(1).Value & " ' , ' " & Guna2DataGridView1.Rows(i).Cells(2).Value & " ' , '" & pictureinfo(i) & " ' , ' " & Guna2ComboBox4.Text & " ' )", "add elemant....")
 
         Next
         c = 0
@@ -109,14 +111,18 @@ Class purchases
     End Sub
 
     Private Sub purchases_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Button4.Visible = False
         Guna2DataGridView1.ColumnHeadersVisible = True
         Guna2DataGridView1.MultiSelect = False
+        Label12.Visible = False
+        Guna2ComboBox6.Visible = False
+
         Guna2TextBox2.Text = functions.GetAutoNumber1("purchases", "list_num")
         Guna2TextBox1.Text = Date.Today
         'انشاء متغير يحمل حميع الاسماء 
-        ComboBox2.DataSource = functions.GetCoumnNames("name", "supplier") 'عرض جميع الاسماء في الكمبو بوكس
-        ComboBox2.DisplayMember = "name"
-        ComboBox2.Text = ""
+        Guna2ComboBox2.DataSource = functions.GetCoumnNames("name", "supplier") 'عرض جميع الاسماء في الكمبو بوكس
+        Guna2ComboBox2.DisplayMember = "name"
+        Guna2ComboBox2.Text = ""
         'اضهار مسار البرنامج
         ' MsgBox(Application.StartupPath)
 
@@ -127,7 +133,7 @@ Class purchases
         'DataGridView1.Columns(Column2).AutoComplete = True
     End Sub
     Dim total_sum As Integer = 0
-    Private Sub DataGridView1_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs)
+    Private Sub Guna2DataGridView1_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellValueChanged
         If (e.RowIndex > -1) Then
             ' Make sure the column index is the one you want to sum
             If e.ColumnIndex = Column3.Index Then
@@ -140,7 +146,7 @@ Class purchases
                 ' Add the values together
                 Dim sum As Double = value1 * value2
                 total_sum += sum
-                TextBox4.Text = total_sum
+                Guna2TextBox4.Text = total_sum
                 ' Set the value of the third column to the sum
                 Guna2DataGridView1.Rows(e.RowIndex).Cells(Column4.Index).Value = sum
             End If
@@ -205,7 +211,7 @@ Class purchases
     '    End Try
     'End Sub
 
-    Private Sub DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs)
+    Private Sub Guna2DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellMouseEnter
         If (e.RowIndex > -1 And e.ColumnIndex = 4) Then
             'MsgBox(e.RowIndex,, e.ColumnIndex)
             If (pictureinfo(0) <> "") Then
@@ -218,6 +224,50 @@ Class purchases
                     End If
                 End If
             End If
+        End If
+    End Sub
+
+    Private Sub Guna2ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Guna2ComboBox1.SelectedIndexChanged
+        If (Guna2ComboBox1.Text = "استرجاع") Then
+            Label10.Visible = True
+            Guna2ComboBox6.Visible = True
+        ElseIf (Guna2ComboBox1.Text = "شراء") Then
+            Label10.Visible = False
+            Guna2ComboBox6.Visible = False
+        End If
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+        functions.Runcommand("Update  purchases SET list_num = '" & Guna2ComboBox6.Text & "',date ='" & Guna2TextBox1.Text & "',list_type='" & Guna2ComboBox1.Text & "',name='" & Guna2ComboBox2.Text & "',payment_type='" & Guna2ComboBox3.Text & "',material_type='" & Guna2ComboBox4.Text & "',country_source='" & Guna2ComboBox5.Text & "',notes='" & Guna2TextBox3.Text & "',total_price='" & Guna2TextBox4.Text & "' where list_num = '" & Guna2ComboBox6.Text & " ' ", "   updata elemant in supplier....")
+        'حذف المواد المشترات عند التحديث
+        functions.Runcommand("DELETE FROM purchases_items WHERE list_num = " & Guna2ComboBox6.Text)
+        For i As Integer = 0 To Guna2DataGridView1.Rows.Count - 2
+
+
+            'يحتاج الى عمل مفتاح رئيسي للجدول من اجل استرجاع التسلسل 
+            'للمفتاح الرئيسي عبر المفتاح الأجنبي وذالك لتحديث البيانات
+            'للمواد المشتراة حسب قائمة الشراء المذكورة
+            'وايظاً تحديث المواد
+            'functions.Runcommand("Update purchases_items SET list_num = '" & Guna2TextBox5.Text & " '(model_code,quantity,price,total_price,ico,list_num) values ('" & Guna2DataGridView1.Rows(i).Cells(0).Value & "' ,' " & Guna2DataGridView1.Rows(i).Cells(1).Value & " ',' " & Guna2DataGridView1.Rows(i).Cells(2).Value & " ', ' " & Guna2DataGridView1.Rows(i).Cells(3).Value & " ' ,  '" & pictureinfo(i) & " '  , " & Guna2TextBox2.Text & " )", "add elemant....")
+            'اضافة المواد المشترات بعد الحذف لاكمال التعديل
+            'تمت هذه الحركة في حالة تم الغاء احد المواد المشتراة
+            functions.Runcommand("insert into purchases_items(model_code,quantity,price,total_price,ico,list_num) values ('" & Guna2DataGridView1.Rows(i).Cells(0).Value & "' ,' " & Guna2DataGridView1.Rows(i).Cells(1).Value & " ',' " & Guna2DataGridView1.Rows(i).Cells(2).Value & " ', ' " & Guna2DataGridView1.Rows(i).Cells(3).Value & " ' ,  '" & pictureinfo(i) & " '  , " & Guna2ComboBox6.Text & " )", "add elemant....")
+
+            functions.Runcommand("Update materials SET model = '" & Guna2DataGridView1.Rows(i).Cells(0).Value & "',quantity = ' " & Guna2DataGridView1.Rows(i).Cells(1).Value & " ' ,price = ' " & Guna2DataGridView1.Rows(i).Cells(2).Value & " ' ,image = '" & pictureinfo(i) & " ' ,type = ' " & Guna2ComboBox4.Text & " ' ", " تم تحديث المواد")
+            'quantity,price,image,type
+        Next
+        Dim s As String = Guna2ComboBox2.Text
+        MsgBox(s)
+        Dim num As String = functions.getOneValue("name", "purchases", "name", Guna2ComboBox2.Text, "string")
+        MsgBox(num)
+
+    End Sub
+
+
+    Private Sub Guna2TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs)
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            e.Handled = True
         End If
     End Sub
 

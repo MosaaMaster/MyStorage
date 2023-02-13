@@ -5,13 +5,13 @@ Public Class Sales
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
-        Guna2TextBox1.Text = GetAutoNumber("sales", "list_num")
-        Runcommand("insert into sales(list_num,sale_type,date,name,payment_type,money_type,notes,bill_cost,discount) values('" & Guna2TextBox1.Text & "','" & "جملة" & "','" & Guna2TextBox2.Text & "','" & ComboBox2.Text & "','" & ComboBox1.Text & "', '" & "دولار" & "' , '" & Guna2TextBox5.Text & " ' , " & total_sum & " , ' " & TextBox8.Text & " ' )", "add item to database")
+        Guna2TextBox1.Text = functions.GetAutoNumber1("sales", "list_num")
+        Runcommand("insert into sales(list_num,sale_type,date,name,payment_type,money_type,notes,bill_cost,discount) values('" & Guna2TextBox1.Text & "','" & "جملة" & "','" & Guna2TextBox2.Text & "','" & Guna2ComboBox2.Text & "','" & Guna2ComboBox1.Text & "', '" & "دولار" & "' , '" & Guna2TextBox5.Text & " ' , " & total_sum & " , ' " & TextBox8.Text & " ' )", "add item to database")
         For i As Integer = 0 To DataGridView1.Rows.Count - 2
             MsgBox(1)
             functions.Runcommand("insert into sales_items(model_code,quantity,price,total_price,ico,list_num) values ('" & DataGridView1.Rows(i).Cells(0).Value & "' ,' " & DataGridView1.Rows(i).Cells(1).Value & " ',' " & DataGridView1.Rows(i).Cells(2).Value & " ', ' " & DataGridView1.Rows(i).Cells(3).Value & " ' , ' " & DataGridView1.Rows(i).Cells(4).Value.ToString() & " '  , ' " & Guna2TextBox1.Text & " ' )", "add elemant....")
             MsgBox(2)
-            functions.Runcommand("UPDATE materials set quantity = quantity -  " & Val(DataGridView1.Rows(i).Cells(1).Value.ToString()) & "  WHERE model = " & "(' & DataGridView1.Rows(i).Cells(0).Value.ToString() ')", "Update quantity....")
+            functions.Runcommand("UPDATE materials set quantity = quantity -  " & Val(DataGridView1.Rows(i).Cells(1).Value.ToString()) & "  WHERE model = '" & DataGridView1.Rows(i).Cells(0).Value.ToString() & "'", "Update quantity....")
 
         Next
         total_sum = 0
@@ -22,11 +22,11 @@ Public Class Sales
     Private Sub Sales_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Guna2TextBox2.Text = Date.Today
         Dim dt As DataTable = Get_Table("select name from [dbo].[customers] ")
-        ComboBox2.DataSource = dt
-        ComboBox2.DisplayMember = "name"
+        Guna2ComboBox2.DataSource = dt
+        Guna2ComboBox2.DisplayMember = "name"
 
         Guna2TextBox1.Text = functions.GetAutoNumber1("sales", "list_num")
-
+        'اضافة رموز المواد للقائمة المنسدلة للداتا كرد فيو
         Column2.DataSource = functions.GetCoumnNames("model", "materials")
         Column2.DisplayMember = "model"
         ' Set the DataSource property of the DataGridViewComboBoxColumn
@@ -52,7 +52,7 @@ Public Class Sales
                     DataGridView1.Rows(e.RowIndex).Cells(4).Value = Image.FromFile(mg)
                 End If
                 'TextBox6.Text = functions.getOneValue("quantity", "materials", "model", DataGridView1.Rows(e.RowIndex).Cells(0).Value.ToString(), "int")
-                ' Column6.Image = Image.FromFile("C:\Users\lenovo\Pictures\Saved Pictures\emoji.png")
+                ' Column6.Image = Image.FromFile("C: \Users\lenovo\Pictures\Saved Pictures\emoji.png")
             End If
             If e.ColumnIndex = Column4.Index Then
                 ' Get the value of the two columns you want to sum
@@ -70,7 +70,7 @@ Public Class Sales
             End If
         End If
     End Sub
-    Private Sub ComboBox2_Leave(sender As Object, e As EventArgs) Handles ComboBox2.Leave
+    Private Sub ComboBox2_Leave(sender As Object, e As EventArgs)
         ' ComboBox2.Items.Add(ComboBox2.Text)
 
     End Sub
@@ -144,7 +144,7 @@ Public Class Sales
         End Try
     End Sub
 
-    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
+    Private Sub Guna2ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Guna2ComboBox2.SelectedIndexChanged
         'Dim r As SqlDataReader
         'Dim name As String
         'name = "select debt from customers where name = '" & ComboBox2.Text & "'"
@@ -175,9 +175,9 @@ Public Class Sales
         '    End If
         'End Try
         'استرجاع دين الزبون
-        Guna2TextBox4.Text = functions.getOneValue("debt", "customers", "name", ComboBox2.Text, "decimal")
+        Guna2TextBox4.Text = functions.getOneValue("debt", "customers", "name", Guna2ComboBox2.Text, "decimal")
         'استرجاع رقم الزبون
-        Guna2TextBox3.Text = functions.getOneValue("cu_id", "customers", "name", ComboBox2.Text, "int")
+        Guna2TextBox3.Text = functions.getOneValue("cu_id", "customers", "name", Guna2ComboBox2.Text, "int")
     End Sub
 
     Private Sub DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellMouseEnter
@@ -217,4 +217,14 @@ Public Class Sales
     Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox2.TextChanged
 
     End Sub
+
+    Private Sub DataGridView1_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+
 End Class

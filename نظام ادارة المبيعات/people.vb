@@ -16,10 +16,13 @@ Public Class people
             ' TextBox1.Text = GetAutoNumber("supplier", "su_id")
         ElseIf Guna2ComboBox1.Text = Trim("مشتري جملة") Then
 
-
             functions.Runcommand("insert into customers(cu_id,name,debt,statee,address,notes,phone_num )values(" & Guna2TextBox1.Text & ",'" & Guna2TextBox2.Text & "'," & Guna2TextBox3.Text & ",'" & Guna2ComboBox2.Text & "','" & Guna2TextBox5.Text & "','" & Guna2TextBox7.Text & "','" & Guna2TextBox6.Text & "' )", "add elemant....")
             functions.ClearData(Me)
             ' TextBox1.Text = GetAutoNumber("customers", "cu_id")
+        ElseIf Guna2ComboBox1.Text = Trim("زبون توصيل") Then
+
+            functions.Runcommand("insert into delivery_customers(de_id,name,statee,address,phone_num )values(" & Guna2TextBox1.Text & ",'" & Guna2TextBox2.Text & "','" & Guna2ComboBox2.Text & "','" & Guna2TextBox5.Text & "','" & Guna2TextBox6.Text & "' )", "add elemant....")
+            functions.ClearData(Me)
         End If
 
     End Sub
@@ -88,7 +91,11 @@ Public Class people
         functions.Enabled_Text_true(Me)
 
         If Guna2ComboBox1.Text = Trim("مجهز") Then
-
+            Label2.Visible = True
+            Label3.Visible = True
+            Label4.Visible = True
+            Guna2Button3.Visible = True
+            Guna2Button4.Visible = True
             Button1.Text = "حفظ المجهز"
             Guna2TextBox1.Text = functions.GetAutoNumber("supplier", "su_id") 'سوفه يقوم بجلب اخر قيمه وزياده بمقدار واحد لينشاء ادي جديدمختلف عن السابق برقم واحد
             'اذا لم يضغط المستخدم على زر التعديل لا داعي لأسترجاع البيانات 
@@ -107,9 +114,13 @@ Public Class people
 
         ElseIf Guna2ComboBox1.Text = Trim("مشتري جملة") Then
                 Button1.Text = "حفظ الزبون"
-                'نفس عمل الكود اسابق ولاكن اذه اختار المستخدم مشتريات جمله 
-
-                Guna2TextBox1.Text = functions.GetAutoNumber("customers", "cu_id")
+            'نفس عمل الكود اسابق ولاكن اذه اختار المستخدم مشتريات جمله 
+            Label2.Visible = True
+            Label3.Visible = True
+            Label4.Visible = True
+            Guna2Button3.Visible = True
+            Guna2Button4.Visible = True
+            Guna2TextBox1.Text = functions.GetAutoNumber1("customers", "cu_id")
             'اذا لم يضغط المستخدم على زر التعديل لا داعي لأسترجاع البيانات 
             'اي اسماءالمجهزين للكومبو بوكس الخاص بالتعديل
             If (Guna2ComboBox3.Visible = True) Then
@@ -125,7 +136,11 @@ Public Class people
         ElseIf Guna2ComboBox1.Text = Trim("زبون توصيل") Then
                 Button1.Text = "حفظ الزبون"
             'نفس عمل الكود اسابق ولاكن اذه اختار المستخدم زبون توصيل 
-
+            Label2.Visible = False
+            Label3.Visible = False
+            Label4.Visible = False
+            Guna2Button3.Visible = False
+            Guna2Button4.Visible = False
             Guna2TextBox1.Text = functions.GetAutoNumber("delivery_customers", "de_id")
             'اذا لم يضغط المستخدم على زر التعديل لا داعي لأسترجاع البيانات 
             'اي اسماءالمجهزين للكومبو بوكس الخاص بالتعديل
@@ -153,7 +168,6 @@ Public Class people
     'اسم من الكمبو بوكس ليقوم بالتعديل عله بيانات
     'الشخص يقوم بسترجاع جميع بينات الشخص ليستطيع التعديل عليها  
     Private Sub Guna2ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Guna2ComboBox3.SelectedIndexChanged
-        MsgBox(1)
 
         If Guna2ComboBox1.Text = Trim("مجهز") Then
             Dim r As SqlDataReader
@@ -252,7 +266,7 @@ Public Class people
     'عند مغادرت حقل ادخال
     'الاسم يقوم بالبحث عن الاسم الموجود  داخل الحقل اذه كان ضمن الاسماء الموجوده
     'سابقا يقوم برفضه اما اذه كان غير موجود يقوم بستقبال الاسم الجديد  
-    Private Sub TextBox2_Leave(sender As Object, e As EventArgs)
+    Private Sub Guna2TextBox2_Leave(sender As Object, e As EventArgs) Handles Guna2TextBox2.Leave
         Dim cmd As SqlCommand
         Dim rd As SqlDataReader
         'عنده مايقوم المستخدم بختيار "المجهز" يبحث
@@ -315,7 +329,4 @@ Public Class people
         End If
     End Sub
 
-    Private Sub Guna2ComboBox1_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles Guna2ComboBox1.SelectedIndexChanged
-
-    End Sub
 End Class
