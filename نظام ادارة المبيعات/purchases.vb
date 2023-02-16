@@ -271,6 +271,64 @@ Class purchases
         End If
     End Sub
 
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dim openFileDialog As New OpenFileDialog()
+        'فلترة النتائج للصور فقط
+        openFileDialog.Filter = "Image files |*.jpg;*.jpeg;*.png"
+        openFileDialog.Title = "Select and image file"
+        If openFileDialog.ShowDialog() = DialogResult.OK Then
+            'استرجاع المسار الكامل مع الأسم
+
+            Dim filePath As String = openFileDialog.FileName
+
+            Button5.BackgroundImage = Image.FromFile(filePath)
+            Button5.BackgroundImageLayout = ImageLayout.Zoom
+            Button5.FlatAppearance.BorderSize = 0
+            Button5.Text = ""
+            Button6.Visible = True
+        End If
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim result As DialogResult = MessageBox.Show("هل تريد حذف الوصل المحدد؟", "تأكيد الحذف", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        If result = DialogResult.OK Then
+            Button5.BackgroundImage = Nothing
+            Button5.FlatAppearance.BorderSize = 1
+            Button5.Text = "اضافة وصل المجهز (اختياري"
+            Button6.Visible = False
+
+        End If
+
+    End Sub
+
+    Private Sub Button5_MouseHover(sender As Object, e As EventArgs) Handles Button5.MouseHover
+        If (Button5.Text = "") Then
+            PictureBox1.Image = Button5.BackgroundImage
+        End If
+    End Sub
+
+    Private Sub Button5_MouseLeave(sender As Object, e As EventArgs) Handles Button5.MouseLeave
+        PictureBox1.Image = Nothing
+    End Sub
+
+
+
+
+    'Private Sub Button7_Click(sender As Object, e As EventArgs)
+    '    Dim printerName As String = ""
+    '    Dim printDocument As New Printing.PrintDocument()
+    '    Dim printDialog As New PrintDialog()
+
+    '    ' Show the print dialog to select the printer
+    '    If printDialog.ShowDialog() = DialogResult.OK Then
+    '        printDocument.PrinterSettings = printDialog.PrinterSettings
+    '        printerName = printDocument.PrinterSettings.PrinterName
+    '    End If
+
+    '    ' Use the printer name in your code
+    '    MessageBox.Show("Printer name: " & printerName)
+    'End Sub
+
 
     'Private Sub DataGridView1_CellLeave(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellLeave
     '    If DataGridView1.SelectedRows.Count > 0 Then
