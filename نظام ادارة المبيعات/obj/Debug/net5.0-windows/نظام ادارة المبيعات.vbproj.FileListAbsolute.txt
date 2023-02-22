@@ -102,3 +102,5 @@ E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادار
 E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.pdb
 E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.genruntimeconfig.cache
 E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام ادارة المبيعات.vbproj.AssemblyReference.cache
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\obj\Debug\net5.0-windows\نظام_ادارة_المبيعات.welcome.resources
+E:\My programms\نظام ادارة المبيعات\MyStorage\نظام ادارة المبيعات\bin\Debug\net5.0-windows\FontAwesome.Sharp.dll

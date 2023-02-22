@@ -12,8 +12,16 @@ Class purchases
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+        For x As Integer = 0 To Guna2DataGridView1.Rows.Count - 2
+            For y = 0 To 3
+                If (Guna2DataGridView1.Rows(x).Cells(y).Value Is Nothing) Then
+                    MessageBox.Show("الرجاء اكمال معلومات المواد", "نقص مدخلات", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Exit Sub
+                End If
+            Next
+        Next
         functions.Runcommand("insert into purchases(list_num,date,list_type,name,payment_type,material_type,country_source,notes,total_price)values(" & Guna2TextBox2.Text & ",'" & Guna2TextBox1.Text & "','" & Guna2ComboBox1.Text & "','" & Guna2ComboBox2.Text & "','" & Guna2ComboBox3.Text & "','" & Guna2ComboBox4.Text & "','" & Guna2ComboBox5.Text & "' , '" & Guna2TextBox3.Text & "' , '" & Guna2TextBox4.Text & "')", "add elemant....")
+
         For i As Integer = 0 To Guna2DataGridView1.Rows.Count - 2
 
             'Dim bmp As Bitmap = DataGridView1.Rows(i).Cells(4).Value
@@ -112,8 +120,9 @@ Class purchases
 
     Private Sub purchases_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Button4.Visible = False
-        Guna2DataGridView1.ColumnHeadersVisible = True
+        Guna2DataGridView1.RowHeadersVisible = True 'اضهار زر الحذف
         Guna2DataGridView1.MultiSelect = False
+        Column4.ReadOnly = True 'اغلاق تعديل المبلغ الكلي
         Label12.Visible = False
         Guna2ComboBox6.Visible = False
 
@@ -311,8 +320,39 @@ Class purchases
         PictureBox1.Image = Nothing
     End Sub
 
+    Private Sub Guna2DataGridView1_CellValidating(sender As Object, e As DataGridViewCellValidatingEventArgs) Handles Guna2DataGridView1.CellValidating
+        'عامود الكمية والسعر
+        If e.ColumnIndex = 1 Or e.ColumnIndex = 2 Then 'check if it is column 2
+            'If Not Guna2DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).Value = Nothing Then
+            Dim value As String = e.FormattedValue.ToString()
+            'اذا لم تكن الخلية فارغة
+            If (value <> "") Then
+                Dim num As Double
+                'اذا لم يكن المدخل رقم صحيح او عشري
+                If Not Double.TryParse(value, num) Then
+                    'منع الحدث
+                    e.Cancel = True 'cancel the cell edit
+                    MessageBox.Show("الرجاء ادخال ارقام فقط", "ادخال خاطئ", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    'Guna2DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).Value = Nothing
+                End If
+            End If
+        ElseIf e.ColumnIndex = 0 Then
+            Dim newValue = e.FormattedValue.ToString()
 
+            ' Check if the new value already exists in the column
+            For Each row As DataGridViewRow In Guna2DataGridView1.Rows
+                If Not row.IsNewRow AndAlso row.Index <> e.RowIndex AndAlso row.Cells(0).Value.ToString() = newValue Then
+                    e.Cancel = True ' Cancel the cell validation
+                    MessageBox.Show("لا يمكن تكرار رمز المادة لنفس القائمة", "الرمز مستخدم", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Return
+                End If
+            Next
 
+            ' Clear the error message if the new value is unique
+            'Guna2DataGridView1.Rows(e.RowIndex).Cells(0).ErrorText = ""
+        End If
+
+    End Sub
 
     'Private Sub Button7_Click(sender As Object, e As EventArgs)
     '    Dim printerName As String = ""

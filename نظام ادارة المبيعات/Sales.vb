@@ -8,9 +8,8 @@ Public Class Sales
         Guna2TextBox1.Text = functions.GetAutoNumber1("sales", "list_num")
         Runcommand("insert into sales(list_num,sale_type,date,name,payment_type,money_type,notes,bill_cost,discount) values('" & Guna2TextBox1.Text & "','" & "جملة" & "','" & Guna2TextBox2.Text & "','" & Guna2ComboBox2.Text & "','" & Guna2ComboBox1.Text & "', '" & "دولار" & "' , '" & Guna2TextBox5.Text & " ' , " & total_sum & " , ' " & TextBox8.Text & " ' )", "add item to database")
         For i As Integer = 0 To DataGridView1.Rows.Count - 2
-            MsgBox(1)
             functions.Runcommand("insert into sales_items(model_code,quantity,price,total_price,ico,list_num) values ('" & DataGridView1.Rows(i).Cells(0).Value & "' ,' " & DataGridView1.Rows(i).Cells(1).Value & " ',' " & DataGridView1.Rows(i).Cells(2).Value & " ', ' " & DataGridView1.Rows(i).Cells(3).Value & " ' , ' " & DataGridView1.Rows(i).Cells(4).Value.ToString() & " '  , ' " & Guna2TextBox1.Text & " ' )", "add elemant....")
-            MsgBox(2)
+
             functions.Runcommand("UPDATE materials set quantity = quantity -  " & Val(DataGridView1.Rows(i).Cells(1).Value.ToString()) & "  WHERE model = '" & DataGridView1.Rows(i).Cells(0).Value.ToString() & "'", "Update quantity....")
 
         Next
@@ -40,10 +39,11 @@ Public Class Sales
     Dim total_sum As Double = 0
     Dim mg As String = ""
     Private Sub DataGridView1_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellValueChanged
+        'التأكد من الضغط على المكان الصحيح
+        If (e.RowIndex > -1) Then
+            ' Make sure the column index is the one you want to sum
+            If e.ColumnIndex = Column2.Index Then
 
-        ' Make sure the column index is the one you want to sum
-        If e.ColumnIndex = Column2.Index Then
-            If (e.RowIndex > -1) Then
                 ' MsgBox(DataGridView1.Rows(e.RowIndex).Cells(0).Value.ToString())
                 'تحميل الصورة حسب موقعها مع ملاحضة لا يمكن تحميل الصور المرقمة عربي
                 mg = functions.getOneValue("image", "materials", "model", DataGridView1.Rows(e.RowIndex).Cells(0).Value.ToString(), "string")
@@ -54,6 +54,7 @@ Public Class Sales
                 'TextBox6.Text = functions.getOneValue("quantity", "materials", "model", DataGridView1.Rows(e.RowIndex).Cells(0).Value.ToString(), "int")
                 ' Column6.Image = Image.FromFile("C: \Users\lenovo\Pictures\Saved Pictures\emoji.png")
             End If
+
             If e.ColumnIndex = Column4.Index Then
                 ' Get the value of the two columns you want to sum
 
@@ -61,14 +62,17 @@ Public Class Sales
 
                 Dim value2 As Double = DataGridView1.Rows(e.RowIndex).Cells(1).Value
                 Dim value1 As Double = DataGridView1.Rows(e.RowIndex).Cells(2).Value
-                ' Add the values together
-                Dim sum As Double = value1 * value2
-                total_sum += sum
-                Guna2TextBox7.Text = total_sum
-                ' Set the value of the third column to the sum
-                DataGridView1.Rows(e.RowIndex).Cells(Column5.Index).Value = sum
+                'التأكد من وجود الكمية والسعر 
+                If (value1 <> 0 And value2 <> 0) Then
+                    ' Add the values together
+                    Dim sum As Double = value1 * value2
+                    total_sum += sum
+                    Guna2TextBox7.Text = total_sum
+                    ' Set the value of the third column to the sum
+                    DataGridView1.Rows(e.RowIndex).Cells(Column5.Index).Value = sum
+                End If
             End If
-        End If
+            End If
     End Sub
     Private Sub ComboBox2_Leave(sender As Object, e As EventArgs)
         ' ComboBox2.Items.Add(ComboBox2.Text)
@@ -109,7 +113,7 @@ Public Class Sales
                 If (e.ColumnIndex = -1) Then
 
                     ' Dim d As DialogResult = MessageBox.Show("هل انت متأكد من رغبتك بحذف السطر المحدد؟", "تأكيد الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2)
-                    MsgBox("يتم الحذف")
+                    'MsgBox("يتم الحذف")
                     'تحديد السطر بناء على المدخل
                     Dim selectedRowIndex As Integer = DataGridView1.SelectedRows(0).Index
                     'اذا لم يكن السطر المحدد اصغر من الصفر
@@ -210,5 +214,37 @@ Public Class Sales
         End If
     End Sub
 
+    Private Sub DataGridView1_CellValidating(sender As Object, e As DataGridViewCellValidatingEventArgs) Handles DataGridView1.CellValidating
+        'عامود الكمية والسعر
+        If e.ColumnIndex = 1 Or e.ColumnIndex = 2 Then 'check if it is column 2
+            'If Not Guna2DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).Value = Nothing Then
+            Dim value As String = e.FormattedValue.ToString()
+            'اذا لم تكن الخلية فارغة
+            If (value <> "") Then
+                Dim num As Double
+                'اذا لم يكن المدخل رقم صحيح او عشري
+                If Not Double.TryParse(value, num) Then
+                    'منع الحدث
+                    e.Cancel = True 'cancel the cell edit
+                    MessageBox.Show("الرجاء ادخال ارقام فقط", "ادخال خاطئ", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    'Guna2DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).Value = Nothing
+                End If
+            End If
+        ElseIf e.ColumnIndex = 0 Then
+            Dim newValue = e.FormattedValue.ToString()
 
+            ' Check if the new value already exists in the column
+            For Each row As DataGridViewRow In DataGridView1.Rows
+                If Not row.IsNewRow AndAlso row.Index <> e.RowIndex AndAlso row.Cells(0).Value.ToString() = newValue Then
+                    e.Cancel = True ' Cancel the cell validation
+                    MessageBox.Show("لا يمكن تكرار رمز المادة لنفس القائمة", "الرمز مستخدم", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Return
+                End If
+            Next
+
+            ' Clear the error message if the new value is unique
+            'Guna2DataGridView1.Rows(e.RowIndex).Cells(0).ErrorText = ""
+        End If
+
+    End Sub
 End Class

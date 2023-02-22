@@ -11,6 +11,9 @@ Public Class login
         End If
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If (Guna2TextBox1.Text = "") Then
+            MessageBox.Show("الرجاء ادخال الأسم")
+        End If
         Dim User As String = functions.getOneValue("user_name", "Users", "user_name", Guna2TextBox1.Text, "string")
 
         Try
@@ -22,8 +25,9 @@ Public Class login
                 Exit Sub
             End If
             Dim licenses As String = functions.getOneValue("licenses", "Users", "user_name", Guna2TextBox1.Text, "string")
-            MsgBox("مرحباً :" & User,, "سجلت الدخول بصيغة " & licenses)
-
+            If (licenses <> "") Then
+                MsgBox("مرحباً :" & User,, "سجلت الدخول بصيغة " & licenses)
+            End If
             If (licenses = "أدمن") Then
                 Me.Hide()
                 Form1.Show()
@@ -34,6 +38,7 @@ Public Class login
                 Form1.Button5.Visible = False
                 Form1.Button6.Visible = False
                 Form1.Show()
+
             End If
 
         Catch ex As Exception
@@ -98,10 +103,18 @@ Public Class login
     End Sub
 
     Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox2.TextChanged
+        If (Guna2TextBox1.Text = "") Then
+            Guna2TextBox2.Clear()
+            Guna2TextBox1.Focus()
+        End If
         If (Guna2TextBox2.Text <> "") Then
             PictureBox1.Visible = True
         Else
             PictureBox1.Visible = False
         End If
+    End Sub
+
+    Private Sub login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Guna2TextBox1.Focus()
     End Sub
 End Class

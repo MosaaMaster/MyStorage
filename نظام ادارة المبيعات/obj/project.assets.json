@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
+      "FontAwesome.Sharp/6.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/FontAwesome.Sharp.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
       "Guna.UI2.WinForms/2.0.4.2": {
         "type": "package",
         "dependencies": {
@@ -179,6 +191,21 @@
     }
   },
   "libraries": {
+    "FontAwesome.Sharp/6.2.1": {
+      "sha512": "eYpj85+70pOjV4cOfB/Et/Rj6m56WRlCKU2G4ivWCohb7sF7DwHz/3jy8XIWp9utgb/R2Pqm+HsaBwV33FBNbg==",
+      "type": "package",
+      "path": "fontawesome.sharp/6.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fontawesome.sharp.6.2.1.nupkg.sha512",
+        "fontawesome.sharp.nuspec",
+        "lib/net472/FontAwesome.Sharp.dll",
+        "lib/net48/FontAwesome.Sharp.dll",
+        "lib/net6.0-windows7.0/FontAwesome.Sharp.dll",
+        "lib/netcoreapp3.1/FontAwesome.Sharp.dll"
+      ]
+    },
     "Guna.UI2.WinForms/2.0.4.2": {
       "sha512": "51vyOKN0k9ej4bVen/j4rSkQDH5F4o/3Y3EG9zJHvE9rXMuOQa5Z30TRL8wKuywFRGqBDR9rMwtC7EFEf6qqVg==",
       "type": "package",
@@ -567,6 +594,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
+      "FontAwesome.Sharp >= 6.2.1",
       "Guna.UI2.WinForms >= 2.0.4.2",
       "System.Data.SqlClient >= 4.8.4"
     ]
@@ -610,6 +638,10 @@
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
         "dependencies": {
+          "FontAwesome.Sharp": {
+            "target": "Package",
+            "version": "[6.2.1, )"
+          },
           "Guna.UI2.WinForms": {
             "target": "Package",
             "version": "[2.0.4.2, )"

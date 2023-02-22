@@ -203,7 +203,6 @@ Module functions
 
 
             End While
-            sqlconn.Close()
 
         Catch ex As Exception
             MsgBox(ex.Message)

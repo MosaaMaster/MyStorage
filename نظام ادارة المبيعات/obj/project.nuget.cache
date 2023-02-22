@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Zk0xLbYprjkyLH/NkScHJB0O0y5XwGRRXkDtEJvxiz9ncIRftpYGLTV9WqrtZeJNYP6ZaxoBXAb8MTXiiuLEEA==",
+  "dgSpecHash": "PVl7d06s/V9joo68+RUjDBMIgElKLbG/qXXZl/Tlca8tQwCPBOyMAD9uJ7mOT2JHKauNcilikfcvOnIo63oFuQ==",
   "success": true,
   "projectFilePath": "E:\\My programms\\نظام ادارة المبيعات\\MyStorage\\نظام ادارة المبيعات\\نظام ادارة المبيعات.vbproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lenovo\\.nuget\\packages\\fontawesome.sharp\\6.2.1\\fontawesome.sharp.6.2.1.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.2\\guna.ui2.winforms.2.0.4.2.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",

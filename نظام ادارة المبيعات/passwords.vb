@@ -2,8 +2,11 @@
 
     Private Sub passwords_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PictureBox1.Visible = False
-        Guna2ComboBox1.Items.Add("أدمن")
-        Guna2ComboBox1.Items.Add("مستخدم")
+        If (Guna2ComboBox1.Items.Count = -1) Then
+
+            Guna2ComboBox1.Items.Add("أدمن")
+            Guna2ComboBox1.Items.Add("مستخدم")
+        End If
         Guna2TextBox2.MaxLength = 8
     End Sub
 

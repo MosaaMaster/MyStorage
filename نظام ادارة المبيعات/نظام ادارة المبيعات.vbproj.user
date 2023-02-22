@@ -19,6 +19,9 @@
     <Compile Update="passwords.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="people.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="purchases.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -34,7 +37,7 @@
     <Compile Update="Sales.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="people.vb">
+    <Compile Update="welcome.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

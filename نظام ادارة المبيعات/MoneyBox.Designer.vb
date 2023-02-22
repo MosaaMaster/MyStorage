@@ -496,8 +496,7 @@ Partial Class MoneyBox
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.BackgroundImage = Global.نظام_ادارة_المبيعات.My.Resources.Resources.photo_2023_02_03_23_01_33
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1142, 682)
         Me.Controls.Add(Me.TextBox3)

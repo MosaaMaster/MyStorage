@@ -4,9 +4,10 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>نظام_ادارة_المبيعات</RootNamespace>
-    <StartupObject>نظام_ادارة_المبيعات.purchases</StartupObject>
+    <StartupObject>نظام_ادارة_المبيعات.welcome</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <ApplicationIcon>لوغو_نظام_ادارة_المبيعات_صورة-removebg-preview.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp" Version="6.2.1" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.2" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
   </ItemGroup>

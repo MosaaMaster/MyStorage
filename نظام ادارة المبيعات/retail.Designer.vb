@@ -34,11 +34,12 @@ Partial Class retail
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -65,9 +66,12 @@ Partial Class retail
         Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox16 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox15 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox17 = New Guna.UI2.WinForms.Guna2TextBox()
@@ -91,6 +95,14 @@ Partial Class retail
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.deliveryColumn2 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.deliveryColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.deliveryColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.deliveryColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.deliveryColumn6 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
@@ -99,10 +111,8 @@ Partial Class retail
         Me.Guna2TextBox24 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox23 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2ComboBox11 = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox26 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox25 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox27 = New Guna.UI2.WinForms.Guna2TextBox()
@@ -121,12 +131,6 @@ Partial Class retail
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewComboBoxColumn1 = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Button14 = New System.Windows.Forms.Button()
@@ -136,8 +140,8 @@ Partial Class retail
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -157,6 +161,8 @@ Partial Class retail
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.TabPage1.Controls.Add(Me.Label16)
+        Me.TabPage1.Controls.Add(Me.Guna2TextBox1)
         Me.TabPage1.Controls.Add(Me.Guna2TextBox16)
         Me.TabPage1.Controls.Add(Me.Guna2TextBox15)
         Me.TabPage1.Controls.Add(Me.Guna2TextBox17)
@@ -183,11 +189,45 @@ Partial Class retail
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "مباشر"
         '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label16.Location = New System.Drawing.Point(970, 470)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(84, 22)
+        Me.Label16.TabIndex = 126
+        Me.Label16.Text = "رصيد المادة"
+        '
+        'Guna2TextBox1
+        '
+        Me.Guna2TextBox1.BorderRadius = 5
+        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox1.CustomizableEdges = CustomizableEdges1
+        Me.Guna2TextBox1.DefaultText = ""
+        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(853, 463)
+        Me.Guna2TextBox1.Name = "Guna2TextBox1"
+        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox1.PlaceholderText = ""
+        Me.Guna2TextBox1.SelectedText = ""
+        Me.Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(110, 36)
+        Me.Guna2TextBox1.TabIndex = 125
+        '
         'Guna2TextBox16
         '
         Me.Guna2TextBox16.BorderRadius = 5
         Me.Guna2TextBox16.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox16.CustomizableEdges = CustomizableEdges1
+        Me.Guna2TextBox16.CustomizableEdges = CustomizableEdges3
         Me.Guna2TextBox16.DefaultText = ""
         Me.Guna2TextBox16.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox16.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -196,20 +236,20 @@ Partial Class retail
         Me.Guna2TextBox16.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox16.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2TextBox16.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox16.Location = New System.Drawing.Point(502, 473)
+        Me.Guna2TextBox16.Location = New System.Drawing.Point(596, 463)
         Me.Guna2TextBox16.Name = "Guna2TextBox16"
         Me.Guna2TextBox16.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox16.PlaceholderText = ""
         Me.Guna2TextBox16.SelectedText = ""
-        Me.Guna2TextBox16.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Me.Guna2TextBox16.Size = New System.Drawing.Size(191, 36)
+        Me.Guna2TextBox16.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Me.Guna2TextBox16.Size = New System.Drawing.Size(158, 36)
         Me.Guna2TextBox16.TabIndex = 112
         '
         'Guna2TextBox15
         '
         Me.Guna2TextBox15.BorderRadius = 5
         Me.Guna2TextBox15.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox15.CustomizableEdges = CustomizableEdges3
+        Me.Guna2TextBox15.CustomizableEdges = CustomizableEdges5
         Me.Guna2TextBox15.DefaultText = ""
         Me.Guna2TextBox15.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox15.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -218,20 +258,20 @@ Partial Class retail
         Me.Guna2TextBox15.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox15.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2TextBox15.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox15.Location = New System.Drawing.Point(836, 473)
+        Me.Guna2TextBox15.Location = New System.Drawing.Point(376, 463)
         Me.Guna2TextBox15.Name = "Guna2TextBox15"
         Me.Guna2TextBox15.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox15.PlaceholderText = ""
         Me.Guna2TextBox15.SelectedText = ""
-        Me.Guna2TextBox15.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Me.Guna2TextBox15.Size = New System.Drawing.Size(191, 36)
+        Me.Guna2TextBox15.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Me.Guna2TextBox15.Size = New System.Drawing.Size(156, 36)
         Me.Guna2TextBox15.TabIndex = 111
         '
         'Guna2TextBox17
         '
         Me.Guna2TextBox17.BorderRadius = 5
         Me.Guna2TextBox17.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox17.CustomizableEdges = CustomizableEdges5
+        Me.Guna2TextBox17.CustomizableEdges = CustomizableEdges7
         Me.Guna2TextBox17.DefaultText = ""
         Me.Guna2TextBox17.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox17.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -245,14 +285,14 @@ Partial Class retail
         Me.Guna2TextBox17.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox17.PlaceholderText = ""
         Me.Guna2TextBox17.SelectedText = ""
-        Me.Guna2TextBox17.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Me.Guna2TextBox17.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         Me.Guna2TextBox17.Size = New System.Drawing.Size(634, 36)
         Me.Guna2TextBox17.TabIndex = 110
         '
         'Guna2ComboBox1
         '
         Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox1.CustomizableEdges = CustomizableEdges7
+        Me.Guna2ComboBox1.CustomizableEdges = CustomizableEdges9
         Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -263,7 +303,7 @@ Partial Class retail
         Me.Guna2ComboBox1.Items.AddRange(New Object() {"دولار", "دينار"})
         Me.Guna2ComboBox1.Location = New System.Drawing.Point(374, 37)
         Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Me.Guna2ComboBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        Me.Guna2ComboBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         Me.Guna2ComboBox1.Size = New System.Drawing.Size(140, 36)
         Me.Guna2ComboBox1.TabIndex = 109
         '
@@ -271,12 +311,13 @@ Partial Class retail
         '
         Me.Guna2TextBox19.BorderRadius = 5
         Me.Guna2TextBox19.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox19.CustomizableEdges = CustomizableEdges9
+        Me.Guna2TextBox19.CustomizableEdges = CustomizableEdges11
         Me.Guna2TextBox19.DefaultText = ""
         Me.Guna2TextBox19.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox19.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.Guna2TextBox19.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Guna2TextBox19.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox19.Enabled = False
         Me.Guna2TextBox19.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox19.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2TextBox19.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -285,7 +326,7 @@ Partial Class retail
         Me.Guna2TextBox19.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox19.PlaceholderText = ""
         Me.Guna2TextBox19.SelectedText = ""
-        Me.Guna2TextBox19.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        Me.Guna2TextBox19.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         Me.Guna2TextBox19.Size = New System.Drawing.Size(191, 36)
         Me.Guna2TextBox19.TabIndex = 108
         '
@@ -293,12 +334,13 @@ Partial Class retail
         '
         Me.Guna2TextBox20.BorderRadius = 5
         Me.Guna2TextBox20.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox20.CustomizableEdges = CustomizableEdges11
+        Me.Guna2TextBox20.CustomizableEdges = CustomizableEdges13
         Me.Guna2TextBox20.DefaultText = ""
         Me.Guna2TextBox20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox20.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.Guna2TextBox20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Guna2TextBox20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox20.Enabled = False
         Me.Guna2TextBox20.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox20.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2TextBox20.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -307,7 +349,7 @@ Partial Class retail
         Me.Guna2TextBox20.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox20.PlaceholderText = ""
         Me.Guna2TextBox20.SelectedText = ""
-        Me.Guna2TextBox20.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        Me.Guna2TextBox20.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         Me.Guna2TextBox20.Size = New System.Drawing.Size(185, 36)
         Me.Guna2TextBox20.TabIndex = 107
         '
@@ -316,7 +358,7 @@ Partial Class retail
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(713, 473)
+        Me.Label6.Location = New System.Drawing.Point(761, 470)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(88, 22)
@@ -328,7 +370,7 @@ Partial Class retail
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(1034, 480)
+        Me.Label5.Location = New System.Drawing.Point(539, 470)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(50, 22)
@@ -496,6 +538,9 @@ Partial Class retail
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.TabPage2.Controls.Add(Me.Label20)
+        Me.TabPage2.Controls.Add(Me.Guna2TextBox2)
+        Me.TabPage2.Controls.Add(Me.DataGridView2)
         Me.TabPage2.Controls.Add(Me.Label19)
         Me.TabPage2.Controls.Add(Me.Label18)
         Me.TabPage2.Controls.Add(Me.Label17)
@@ -504,10 +549,8 @@ Partial Class retail
         Me.TabPage2.Controls.Add(Me.Guna2TextBox24)
         Me.TabPage2.Controls.Add(Me.Guna2TextBox23)
         Me.TabPage2.Controls.Add(Me.Guna2ComboBox11)
-        Me.TabPage2.Controls.Add(Me.Label16)
         Me.TabPage2.Controls.Add(Me.Label15)
         Me.TabPage2.Controls.Add(Me.Label14)
-        Me.TabPage2.Controls.Add(Me.Guna2TextBox1)
         Me.TabPage2.Controls.Add(Me.Guna2TextBox26)
         Me.TabPage2.Controls.Add(Me.Guna2TextBox25)
         Me.TabPage2.Controls.Add(Me.Guna2TextBox27)
@@ -526,7 +569,6 @@ Partial Class retail
         Me.TabPage2.Controls.Add(Me.Label8)
         Me.TabPage2.Controls.Add(Me.Label7)
         Me.TabPage2.Controls.Add(Me.PictureBox2)
-        Me.TabPage2.Controls.Add(Me.DataGridView2)
         Me.TabPage2.Controls.Add(Me.Button11)
         Me.TabPage2.Controls.Add(Me.Label33)
         Me.TabPage2.Controls.Add(Me.Button14)
@@ -538,6 +580,103 @@ Partial Class retail
         Me.TabPage2.Size = New System.Drawing.Size(1138, 656)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "توصيل"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.Color.Transparent
+        Me.Label20.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label20.Location = New System.Drawing.Point(890, 505)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(84, 22)
+        Me.Label20.TabIndex = 135
+        Me.Label20.Text = "رصيد المادة"
+        '
+        'Guna2TextBox2
+        '
+        Me.Guna2TextBox2.BorderRadius = 5
+        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox2.CustomizableEdges = CustomizableEdges15
+        Me.Guna2TextBox2.DefaultText = ""
+        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox2.Location = New System.Drawing.Point(773, 498)
+        Me.Guna2TextBox2.Name = "Guna2TextBox2"
+        Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox2.PlaceholderText = ""
+        Me.Guna2TextBox2.SelectedText = ""
+        Me.Guna2TextBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        Me.Guna2TextBox2.Size = New System.Drawing.Size(110, 36)
+        Me.Guna2TextBox2.TabIndex = 134
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.deliveryColumn2, Me.deliveryColumn3, Me.deliveryColumn4, Me.deliveryColumn5, Me.deliveryColumn6})
+        Me.DataGridView2.Location = New System.Drawing.Point(307, 268)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DataGridView2.MultiSelect = False
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.DataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView2.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DataGridView2.RowHeadersWidth = 51
+        Me.DataGridView2.RowTemplate.Height = 25
+        Me.DataGridView2.Size = New System.Drawing.Size(680, 222)
+        Me.DataGridView2.TabIndex = 133
+        '
+        'deliveryColumn2
+        '
+        Me.deliveryColumn2.HeaderText = "رمز المادة"
+        Me.deliveryColumn2.MinimumWidth = 6
+        Me.deliveryColumn2.Name = "deliveryColumn2"
+        Me.deliveryColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.deliveryColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.deliveryColumn2.Width = 125
+        '
+        'deliveryColumn3
+        '
+        Me.deliveryColumn3.HeaderText = "الكمية"
+        Me.deliveryColumn3.MinimumWidth = 6
+        Me.deliveryColumn3.Name = "deliveryColumn3"
+        Me.deliveryColumn3.Width = 125
+        '
+        'deliveryColumn4
+        '
+        Me.deliveryColumn4.HeaderText = "سعر المفرد"
+        Me.deliveryColumn4.MinimumWidth = 6
+        Me.deliveryColumn4.Name = "deliveryColumn4"
+        Me.deliveryColumn4.Width = 125
+        '
+        'deliveryColumn5
+        '
+        Me.deliveryColumn5.HeaderText = "المبلغ الكلي"
+        Me.deliveryColumn5.MinimumWidth = 6
+        Me.deliveryColumn5.Name = "deliveryColumn5"
+        Me.deliveryColumn5.Width = 125
+        '
+        'deliveryColumn6
+        '
+        Me.deliveryColumn6.HeaderText = "صورة الموديل"
+        Me.deliveryColumn6.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.deliveryColumn6.MinimumWidth = 6
+        Me.deliveryColumn6.Name = "deliveryColumn6"
+        Me.deliveryColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.deliveryColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.deliveryColumn6.Width = 125
         '
         'Label19
         '
@@ -556,7 +695,7 @@ Partial Class retail
         Me.Label18.AutoSize = True
         Me.Label18.BackColor = System.Drawing.Color.Transparent
         Me.Label18.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label18.Location = New System.Drawing.Point(452, 214)
+        Me.Label18.Location = New System.Drawing.Point(199, 104)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(76, 22)
@@ -591,7 +730,7 @@ Partial Class retail
         '
         Me.Guna2TextBox28.BorderRadius = 5
         Me.Guna2TextBox28.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox28.CustomizableEdges = CustomizableEdges13
+        Me.Guna2TextBox28.CustomizableEdges = CustomizableEdges17
         Me.Guna2TextBox28.DefaultText = ""
         Me.Guna2TextBox28.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox28.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -605,7 +744,7 @@ Partial Class retail
         Me.Guna2TextBox28.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox28.PlaceholderText = ""
         Me.Guna2TextBox28.SelectedText = ""
-        Me.Guna2TextBox28.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        Me.Guna2TextBox28.ShadowDecoration.CustomizableEdges = CustomizableEdges18
         Me.Guna2TextBox28.Size = New System.Drawing.Size(142, 36)
         Me.Guna2TextBox28.TabIndex = 128
         '
@@ -613,7 +752,7 @@ Partial Class retail
         '
         Me.Guna2TextBox24.BorderRadius = 5
         Me.Guna2TextBox24.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox24.CustomizableEdges = CustomizableEdges15
+        Me.Guna2TextBox24.CustomizableEdges = CustomizableEdges19
         Me.Guna2TextBox24.DefaultText = ""
         Me.Guna2TextBox24.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox24.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -622,12 +761,12 @@ Partial Class retail
         Me.Guna2TextBox24.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox24.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2TextBox24.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox24.Location = New System.Drawing.Point(298, 214)
+        Me.Guna2TextBox24.Location = New System.Drawing.Point(45, 104)
         Me.Guna2TextBox24.Name = "Guna2TextBox24"
         Me.Guna2TextBox24.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox24.PlaceholderText = ""
         Me.Guna2TextBox24.SelectedText = ""
-        Me.Guna2TextBox24.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        Me.Guna2TextBox24.ShadowDecoration.CustomizableEdges = CustomizableEdges20
         Me.Guna2TextBox24.Size = New System.Drawing.Size(142, 36)
         Me.Guna2TextBox24.TabIndex = 127
         '
@@ -635,7 +774,7 @@ Partial Class retail
         '
         Me.Guna2TextBox23.BorderRadius = 5
         Me.Guna2TextBox23.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox23.CustomizableEdges = CustomizableEdges17
+        Me.Guna2TextBox23.CustomizableEdges = CustomizableEdges21
         Me.Guna2TextBox23.DefaultText = ""
         Me.Guna2TextBox23.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox23.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -644,20 +783,20 @@ Partial Class retail
         Me.Guna2TextBox23.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox23.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2TextBox23.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox23.Location = New System.Drawing.Point(298, 163)
+        Me.Guna2TextBox23.Location = New System.Drawing.Point(45, 163)
         Me.Guna2TextBox23.Name = "Guna2TextBox23"
         Me.Guna2TextBox23.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox23.PlaceholderText = ""
         Me.Guna2TextBox23.SelectedText = ""
-        Me.Guna2TextBox23.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        Me.Guna2TextBox23.Size = New System.Drawing.Size(142, 36)
+        Me.Guna2TextBox23.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        Me.Guna2TextBox23.Size = New System.Drawing.Size(395, 36)
         Me.Guna2TextBox23.TabIndex = 126
         '
         'Guna2ComboBox11
         '
         Me.Guna2ComboBox11.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ComboBox11.BorderRadius = 5
-        Me.Guna2ComboBox11.CustomizableEdges = CustomizableEdges19
+        Me.Guna2ComboBox11.CustomizableEdges = CustomizableEdges23
         Me.Guna2ComboBox11.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.Guna2ComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Guna2ComboBox11.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -668,28 +807,16 @@ Partial Class retail
         Me.Guna2ComboBox11.Items.AddRange(New Object() {"دولار", "دينار"})
         Me.Guna2ComboBox11.Location = New System.Drawing.Point(298, 101)
         Me.Guna2ComboBox11.Name = "Guna2ComboBox11"
-        Me.Guna2ComboBox11.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        Me.Guna2ComboBox11.ShadowDecoration.CustomizableEdges = CustomizableEdges24
         Me.Guna2ComboBox11.Size = New System.Drawing.Size(142, 36)
         Me.Guna2ComboBox11.TabIndex = 125
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.BackColor = System.Drawing.Color.Transparent
-        Me.Label16.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label16.Location = New System.Drawing.Point(538, 517)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(84, 22)
-        Me.Label16.TabIndex = 124
-        Me.Label16.Text = "رصيد المادة"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label15.Location = New System.Drawing.Point(778, 517)
+        Me.Label15.Location = New System.Drawing.Point(678, 509)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(88, 22)
@@ -701,40 +828,18 @@ Partial Class retail
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label14.Location = New System.Drawing.Point(1028, 517)
+        Me.Label14.Location = New System.Drawing.Point(467, 509)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(50, 22)
         Me.Label14.TabIndex = 122
         Me.Label14.Text = "الخصم"
         '
-        'Guna2TextBox1
-        '
-        Me.Guna2TextBox1.BorderRadius = 5
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.CustomizableEdges = CustomizableEdges21
-        Me.Guna2TextBox1.DefaultText = ""
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(418, 506)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderText = ""
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(113, 36)
-        Me.Guna2TextBox1.TabIndex = 121
-        '
         'Guna2TextBox26
         '
         Me.Guna2TextBox26.BorderRadius = 5
         Me.Guna2TextBox26.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox26.CustomizableEdges = CustomizableEdges23
+        Me.Guna2TextBox26.CustomizableEdges = CustomizableEdges25
         Me.Guna2TextBox26.DefaultText = ""
         Me.Guna2TextBox26.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox26.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -743,12 +848,12 @@ Partial Class retail
         Me.Guna2TextBox26.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox26.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2TextBox26.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox26.Location = New System.Drawing.Point(629, 506)
+        Me.Guna2TextBox26.Location = New System.Drawing.Point(529, 498)
         Me.Guna2TextBox26.Name = "Guna2TextBox26"
         Me.Guna2TextBox26.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox26.PlaceholderText = ""
         Me.Guna2TextBox26.SelectedText = ""
-        Me.Guna2TextBox26.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        Me.Guna2TextBox26.ShadowDecoration.CustomizableEdges = CustomizableEdges26
         Me.Guna2TextBox26.Size = New System.Drawing.Size(142, 36)
         Me.Guna2TextBox26.TabIndex = 120
         '
@@ -756,7 +861,7 @@ Partial Class retail
         '
         Me.Guna2TextBox25.BorderRadius = 5
         Me.Guna2TextBox25.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox25.CustomizableEdges = CustomizableEdges25
+        Me.Guna2TextBox25.CustomizableEdges = CustomizableEdges27
         Me.Guna2TextBox25.DefaultText = ""
         Me.Guna2TextBox25.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox25.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -765,12 +870,12 @@ Partial Class retail
         Me.Guna2TextBox25.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox25.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2TextBox25.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox25.Location = New System.Drawing.Point(879, 506)
+        Me.Guna2TextBox25.Location = New System.Drawing.Point(318, 498)
         Me.Guna2TextBox25.Name = "Guna2TextBox25"
         Me.Guna2TextBox25.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox25.PlaceholderText = ""
         Me.Guna2TextBox25.SelectedText = ""
-        Me.Guna2TextBox25.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        Me.Guna2TextBox25.ShadowDecoration.CustomizableEdges = CustomizableEdges28
         Me.Guna2TextBox25.Size = New System.Drawing.Size(142, 36)
         Me.Guna2TextBox25.TabIndex = 119
         '
@@ -778,7 +883,7 @@ Partial Class retail
         '
         Me.Guna2TextBox27.BorderRadius = 5
         Me.Guna2TextBox27.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox27.CustomizableEdges = CustomizableEdges27
+        Me.Guna2TextBox27.CustomizableEdges = CustomizableEdges29
         Me.Guna2TextBox27.DefaultText = ""
         Me.Guna2TextBox27.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox27.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -787,20 +892,20 @@ Partial Class retail
         Me.Guna2TextBox27.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox27.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2TextBox27.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox27.Location = New System.Drawing.Point(538, 214)
+        Me.Guna2TextBox27.Location = New System.Drawing.Point(45, 214)
         Me.Guna2TextBox27.Name = "Guna2TextBox27"
         Me.Guna2TextBox27.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox27.PlaceholderText = ""
         Me.Guna2TextBox27.SelectedText = ""
-        Me.Guna2TextBox27.ShadowDecoration.CustomizableEdges = CustomizableEdges28
-        Me.Guna2TextBox27.Size = New System.Drawing.Size(449, 36)
+        Me.Guna2TextBox27.ShadowDecoration.CustomizableEdges = CustomizableEdges30
+        Me.Guna2TextBox27.Size = New System.Drawing.Size(942, 36)
         Me.Guna2TextBox27.TabIndex = 118
         '
         'Guna2ComboBox10
         '
         Me.Guna2ComboBox10.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ComboBox10.BorderRadius = 5
-        Me.Guna2ComboBox10.CustomizableEdges = CustomizableEdges29
+        Me.Guna2ComboBox10.CustomizableEdges = CustomizableEdges31
         Me.Guna2ComboBox10.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.Guna2ComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Guna2ComboBox10.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -811,7 +916,7 @@ Partial Class retail
         Me.Guna2ComboBox10.Items.AddRange(New Object() {"دولار", "دينار"})
         Me.Guna2ComboBox10.Location = New System.Drawing.Point(538, 163)
         Me.Guna2ComboBox10.Name = "Guna2ComboBox10"
-        Me.Guna2ComboBox10.ShadowDecoration.CustomizableEdges = CustomizableEdges30
+        Me.Guna2ComboBox10.ShadowDecoration.CustomizableEdges = CustomizableEdges32
         Me.Guna2ComboBox10.Size = New System.Drawing.Size(142, 36)
         Me.Guna2ComboBox10.TabIndex = 117
         '
@@ -819,7 +924,7 @@ Partial Class retail
         '
         Me.Guna2ComboBox12.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ComboBox12.BorderRadius = 5
-        Me.Guna2ComboBox12.CustomizableEdges = CustomizableEdges31
+        Me.Guna2ComboBox12.CustomizableEdges = CustomizableEdges33
         Me.Guna2ComboBox12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.Guna2ComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Guna2ComboBox12.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -830,7 +935,7 @@ Partial Class retail
         Me.Guna2ComboBox12.Items.AddRange(New Object() {"اجل", "نقدي"})
         Me.Guna2ComboBox12.Location = New System.Drawing.Point(820, 160)
         Me.Guna2ComboBox12.Name = "Guna2ComboBox12"
-        Me.Guna2ComboBox12.ShadowDecoration.CustomizableEdges = CustomizableEdges32
+        Me.Guna2ComboBox12.ShadowDecoration.CustomizableEdges = CustomizableEdges34
         Me.Guna2ComboBox12.Size = New System.Drawing.Size(167, 36)
         Me.Guna2ComboBox12.TabIndex = 116
         '
@@ -838,12 +943,13 @@ Partial Class retail
         '
         Me.Guna2TextBox29.BorderRadius = 5
         Me.Guna2TextBox29.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox29.CustomizableEdges = CustomizableEdges33
+        Me.Guna2TextBox29.CustomizableEdges = CustomizableEdges35
         Me.Guna2TextBox29.DefaultText = ""
         Me.Guna2TextBox29.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox29.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.Guna2TextBox29.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Guna2TextBox29.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox29.Enabled = False
         Me.Guna2TextBox29.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox29.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2TextBox29.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -852,7 +958,7 @@ Partial Class retail
         Me.Guna2TextBox29.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox29.PlaceholderText = ""
         Me.Guna2TextBox29.SelectedText = ""
-        Me.Guna2TextBox29.ShadowDecoration.CustomizableEdges = CustomizableEdges34
+        Me.Guna2TextBox29.ShadowDecoration.CustomizableEdges = CustomizableEdges36
         Me.Guna2TextBox29.Size = New System.Drawing.Size(142, 36)
         Me.Guna2TextBox29.TabIndex = 115
         '
@@ -860,12 +966,13 @@ Partial Class retail
         '
         Me.Guna2TextBox30.BorderRadius = 5
         Me.Guna2TextBox30.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox30.CustomizableEdges = CustomizableEdges35
+        Me.Guna2TextBox30.CustomizableEdges = CustomizableEdges37
         Me.Guna2TextBox30.DefaultText = ""
         Me.Guna2TextBox30.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox30.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.Guna2TextBox30.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Guna2TextBox30.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox30.Enabled = False
         Me.Guna2TextBox30.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox30.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2TextBox30.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -874,7 +981,7 @@ Partial Class retail
         Me.Guna2TextBox30.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox30.PlaceholderText = ""
         Me.Guna2TextBox30.SelectedText = ""
-        Me.Guna2TextBox30.ShadowDecoration.CustomizableEdges = CustomizableEdges36
+        Me.Guna2TextBox30.ShadowDecoration.CustomizableEdges = CustomizableEdges38
         Me.Guna2TextBox30.Size = New System.Drawing.Size(167, 36)
         Me.Guna2TextBox30.TabIndex = 114
         '
@@ -882,7 +989,7 @@ Partial Class retail
         '
         Me.Guna2TextBox21.BorderRadius = 5
         Me.Guna2TextBox21.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox21.CustomizableEdges = CustomizableEdges37
+        Me.Guna2TextBox21.CustomizableEdges = CustomizableEdges39
         Me.Guna2TextBox21.DefaultText = ""
         Me.Guna2TextBox21.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox21.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -896,7 +1003,7 @@ Partial Class retail
         Me.Guna2TextBox21.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox21.PlaceholderText = ""
         Me.Guna2TextBox21.SelectedText = ""
-        Me.Guna2TextBox21.ShadowDecoration.CustomizableEdges = CustomizableEdges38
+        Me.Guna2TextBox21.ShadowDecoration.CustomizableEdges = CustomizableEdges40
         Me.Guna2TextBox21.Size = New System.Drawing.Size(142, 36)
         Me.Guna2TextBox21.TabIndex = 113
         '
@@ -904,7 +1011,7 @@ Partial Class retail
         '
         Me.Guna2TextBox22.BorderRadius = 5
         Me.Guna2TextBox22.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox22.CustomizableEdges = CustomizableEdges39
+        Me.Guna2TextBox22.CustomizableEdges = CustomizableEdges41
         Me.Guna2TextBox22.DefaultText = ""
         Me.Guna2TextBox22.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox22.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -918,7 +1025,7 @@ Partial Class retail
         Me.Guna2TextBox22.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox22.PlaceholderText = ""
         Me.Guna2TextBox22.SelectedText = ""
-        Me.Guna2TextBox22.ShadowDecoration.CustomizableEdges = CustomizableEdges40
+        Me.Guna2TextBox22.ShadowDecoration.CustomizableEdges = CustomizableEdges42
         Me.Guna2TextBox22.Size = New System.Drawing.Size(142, 36)
         Me.Guna2TextBox22.TabIndex = 112
         '
@@ -926,7 +1033,7 @@ Partial Class retail
         '
         Me.Guna2ComboBox9.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ComboBox9.BorderRadius = 5
-        Me.Guna2ComboBox9.CustomizableEdges = CustomizableEdges41
+        Me.Guna2ComboBox9.CustomizableEdges = CustomizableEdges43
         Me.Guna2ComboBox9.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.Guna2ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Guna2ComboBox9.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -936,7 +1043,7 @@ Partial Class retail
         Me.Guna2ComboBox9.ItemHeight = 30
         Me.Guna2ComboBox9.Location = New System.Drawing.Point(820, 48)
         Me.Guna2ComboBox9.Name = "Guna2ComboBox9"
-        Me.Guna2ComboBox9.ShadowDecoration.CustomizableEdges = CustomizableEdges42
+        Me.Guna2ComboBox9.ShadowDecoration.CustomizableEdges = CustomizableEdges44
         Me.Guna2ComboBox9.Size = New System.Drawing.Size(167, 36)
         Me.Guna2ComboBox9.TabIndex = 111
         '
@@ -1026,81 +1133,18 @@ Partial Class retail
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(181, 263)
+        Me.PictureBox2.Location = New System.Drawing.Point(59, 268)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(230, 230)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 101
         Me.PictureBox2.TabStop = False
         '
-        'DataGridView2
-        '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewComboBoxColumn1, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewImageColumn1})
-        Me.DataGridView2.Location = New System.Drawing.Point(418, 263)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.DataGridView2.MultiSelect = False
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.DataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView2.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridView2.RowHeadersWidth = 51
-        Me.DataGridView2.RowTemplate.Height = 25
-        Me.DataGridView2.Size = New System.Drawing.Size(678, 230)
-        Me.DataGridView2.TabIndex = 100
-        '
-        'DataGridViewComboBoxColumn1
-        '
-        Me.DataGridViewComboBoxColumn1.HeaderText = "رمز المادة"
-        Me.DataGridViewComboBoxColumn1.MinimumWidth = 6
-        Me.DataGridViewComboBoxColumn1.Name = "DataGridViewComboBoxColumn1"
-        Me.DataGridViewComboBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewComboBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewComboBoxColumn1.Width = 125
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.HeaderText = "الكمية"
-        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.Width = 125
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.HeaderText = "سعر المفرد"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 125
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.HeaderText = "المبلغ الكلي"
-        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Width = 125
-        '
-        'DataGridViewImageColumn1
-        '
-        Me.DataGridViewImageColumn1.HeaderText = "صورة الموديل"
-        Me.DataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.DataGridViewImageColumn1.MinimumWidth = 6
-        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
-        Me.DataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewImageColumn1.Width = 125
-        '
         'Button11
         '
         Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
         Me.Button11.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button11.Location = New System.Drawing.Point(1001, 590)
+        Me.Button11.Location = New System.Drawing.Point(901, 582)
         Me.Button11.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(108, 36)
@@ -1124,7 +1168,7 @@ Partial Class retail
         '
         Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
         Me.Button14.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button14.Location = New System.Drawing.Point(885, 590)
+        Me.Button14.Location = New System.Drawing.Point(785, 582)
         Me.Button14.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(108, 36)
@@ -1136,7 +1180,7 @@ Partial Class retail
         '
         Me.Button15.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer))
         Me.Button15.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button15.Location = New System.Drawing.Point(740, 590)
+        Me.Button15.Location = New System.Drawing.Point(640, 582)
         Me.Button15.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(136, 36)
@@ -1162,8 +1206,8 @@ Partial Class retail
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1187,12 +1231,6 @@ Partial Class retail
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewImageColumn
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents DataGridView2 As DataGridView
-    Friend WithEvents DataGridViewComboBoxColumn1 As DataGridViewComboBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
@@ -1221,9 +1259,7 @@ Partial Class retail
     Friend WithEvents Guna2TextBox27 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2TextBox26 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2TextBox25 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2ComboBox11 As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Guna2TextBox28 As Guna.UI2.WinForms.Guna2TextBox
@@ -1233,4 +1269,14 @@ Partial Class retail
     Friend WithEvents Label18 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents deliveryColumn2 As DataGridViewComboBoxColumn
+    Friend WithEvents deliveryColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents deliveryColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents deliveryColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents deliveryColumn6 As DataGridViewImageColumn
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
 End Class
